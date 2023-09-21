@@ -1,0 +1,19 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,uvm,,,,,,
+C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.srcs/sim_1/new/counter_rc_mod.tb,1694713885,systemVerilog,,,,counter_rc_mod_tb,,uvm,,,,,,
+C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.srcs/sim_1/new/counter_rc_mod60_tb.sv,1694717634,systemVerilog,,,,counter_rc_mod60_tb,,uvm,,,,,,
+C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.srcs/sim_1/new/dig_clock_tb.sv,1695094272,systemVerilog,,,,dig_clock_tb,,uvm,,,,,,
+C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.srcs/sim_1/new/hr_cnt_tb.sv,1695088268,systemVerilog,,,,hr_cnt_tb,,uvm,,,,,,
+C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.srcs/sim_1/new/period_enb_tb.sv,1694716984,systemVerilog,,,,period_enb_tb,,uvm,,,,,,
+C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.srcs/sources_1/new/counter_rc_mod60.sv,1694717989,systemVerilog,,C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.srcs/sim_1/new/counter_rc_mod60_tb.sv,,counter_rc_mod60,,uvm,,,,,,
+C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.srcs/sources_1/new/hr_cnt.sv,1695088188,systemVerilog,,C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.srcs/sim_1/new/hr_cnt_tb.sv,,hr_cnt,,uvm,,,,,,
+C:/Users/choprak/ECE212_Chopra_Hill/Lab02/hdl/counter.sv,1694108657,systemVerilog,,C:/Users/choprak/ECE212_Chopra_Hill/Lab02/hdl/dec_3_8_n.sv,,counter,,uvm,,,,,,
+C:/Users/choprak/ECE212_Chopra_Hill/Lab02/hdl/counter_rc_mod.sv,1694712338,systemVerilog,,C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.srcs/sim_1/new/counter_rc_mod.tb,,counter_rc_mod,,uvm,,,,,,
+C:/Users/choprak/ECE212_Chopra_Hill/Lab02/hdl/dec_3_8_n.sv,1694108702,systemVerilog,,C:/Users/choprak/ECE212_Chopra_Hill/Lab02/hdl/mux8.sv,,dec_3_8_n,,uvm,,,,,,
+C:/Users/choprak/ECE212_Chopra_Hill/Lab02/hdl/mux8.sv,1694108788,systemVerilog,,C:/Users/choprak/ECE212_Chopra_Hill/Lab02/hdl/period_enb.sv,,mux8,,uvm,,,,,,
+C:/Users/choprak/ECE212_Chopra_Hill/Lab02/hdl/period_enb.sv,1694717223,systemVerilog,,C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.srcs/sim_1/new/period_enb_tb.sv,,period_enb,,uvm,,,,,,
+C:/Users/choprak/ECE212_Chopra_Hill/Lab02/hdl/sevenseg_ctl.sv,1694109156,systemVerilog,,,,sevenseg_ctl,,uvm,,,,,,
+C:/Users/choprak/ECE212_Chopra_Hill/Lab02/hdl/sevenseg_ext_n.sv,1694109161,systemVerilog,,C:/Users/choprak/ECE212_Chopra_Hill/Lab02/hdl/sevenseg_ctl.sv,,seven_seg_n,,uvm,,,,,,

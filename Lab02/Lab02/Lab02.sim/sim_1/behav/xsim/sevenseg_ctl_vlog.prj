@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../../../Lab02/hdl/counter.sv" \
+"../../../../../../Lab02/hdl/dec_3_8_n.sv" \
+"../../../../../../Lab02/hdl/mux8.sv" \
+"../../../../../../Lab02/hdl/period_enb.sv" \
+"../../../../../../Lab02/hdl/sevenseg_ext_n.sv" \
+"../../../../../../Lab02/hdl/sevenseg_ctl.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

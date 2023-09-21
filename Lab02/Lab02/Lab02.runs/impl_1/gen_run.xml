@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1695326040">
+  <File Type="BITSTR-BMM" Name="dig_clock_top_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="dig_clock_top_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="dig_clock_top_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="dig_clock_top_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="dig_clock_top.tcl"/>
+  <File Type="OPT-TIMING" Name="dig_clock_top_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="dig_clock_top_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="dig_clock_top_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="dig_clock_top_reports.tcl"/>
+  <File Type="OPT-DRC" Name="dig_clock_top_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="dig_clock_top.hwdef"/>
+  <File Type="PWROPT-DCP" Name="dig_clock_top_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="dig_clock_top_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="dig_clock_top_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="dig_clock_top_placed.dcp"/>
+  <File Type="PLACE-IO" Name="dig_clock_top_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="dig_clock_top_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="dig_clock_top_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="dig_clock_top_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="dig_clock_top_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="dig_clock_top_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="dig_clock_top_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="dig_clock_top_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="dig_clock_top_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="dig_clock_top.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="dig_clock_top_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="dig_clock_top_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="dig_clock_top_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="dig_clock_top.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="dig_clock_top_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="dig_clock_top_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="dig_clock_top_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="dig_clock_top_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="dig_clock_top_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="dig_clock_top_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="dig_clock_top_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="dig_clock_top.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="dig_clock_top_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="dig_clock_top_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="dig_clock_top_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="dig_clock_top_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="dig_clock_top_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="dig_clock_top_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="dig_clock_top_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="dig_clock_top_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="dig_clock_top_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="dig_clock_top_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="dig_clock_top_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="dig_clock_top_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="dig_clock_top_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="dig_clock_top_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="dig_clock_top_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="dig_clock_top_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="dig_clock_top_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="dig_clock_top_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="dig_clock_top_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="dig_clock_top_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="dig_clock_top_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="dig_clock_top.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="dig_clock_top_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="dig_clock_top.rbt"/>
+  <File Type="BITSTR-NKY" Name="dig_clock_top.nky"/>
+  <File Type="PDI-FILE" Name="dig_clock_top.pdi"/>
+  <File Type="RCFI_FILE" Name="dig_clock_top.rcfi"/>
+  <File Type="CFI_FILE" Name="dig_clock_top.cfi"/>
+  <File Type="RNPI_FILE" Name="dig_clock_top.rnpi"/>
+  <File Type="NPI_FILE" Name="dig_clock_top.npi"/>
+  <File Type="RBD_FILE" Name="dig_clock_top.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="dig_clock_top.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="dig_clock_top.sysdef"/>
+  <File Type="BG-BGN" Name="dig_clock_top.bgn"/>
+  <File Type="BG-DRC" Name="dig_clock_top.drc"/>
+  <File Type="RDI-RDI" Name="dig_clock_top.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../../Lab02/hdl/counter.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../Lab02/hdl/counter_rc_mod.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../Lab02/hdl/dec_3_8_n.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/dig_clock.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/hr_cnt.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../Lab02/hdl/mux8.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../Lab02/hdl/period_enb.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../Lab02/hdl/sevenseg_ctl.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../Lab02/hdl/sevenseg_ext_n.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/dig_clock_top.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../Lab02/hdl/debounce.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../Lab02/hdl/single_pulser.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/add3.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/binary_to_bcd.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/sevenseg_ctl_top.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="dig_clock_top"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../../Lab02/constraints/Nexys-A7-100T-Master.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>
