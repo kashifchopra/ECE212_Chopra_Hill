@@ -2,11 +2,11 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Thu Sep 21 15:54:02 2023
-# Process ID: 34192
-# Current directory: C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/synth_1
+# Start of session at: Thu Sep 28 14:45:51 2023
+# Process ID: 11660
+# Current directory: C:/Users/choprak/ECE212_Chopra_Hill/Lab02/Lab02/Lab02.runs/synth_1
 # Command line: vivado.exe -log dig_clock_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source dig_clock_top.tcl
-# Log file: C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/synth_1/dig_clock_top.vds
-# Journal file: C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/synth_1\vivado.jou
+# Log file: C:/Users/choprak/ECE212_Chopra_Hill/Lab02/Lab02/Lab02.runs/synth_1/dig_clock_top.vds
+# Journal file: C:/Users/choprak/ECE212_Chopra_Hill/Lab02/Lab02/Lab02.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source dig_clock_top.tcl -notrace

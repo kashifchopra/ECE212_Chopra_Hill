@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date             : Thu Sep 21 15:55:13 2023
+| Date             : Thu Sep 28 14:47:03 2023
 | Host             : ECE419-6V259R3 running 64-bit major release  (build 9200)
 | Command          : report_power -file dig_clock_top_power_routed.rpt -pb dig_clock_top_power_summary_routed.pb -rpx dig_clock_top_power_routed.rpx
 | Design           : dig_clock_top
@@ -53,13 +53,13 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |      176 |       --- |             --- |
-|   LUT as Logic |    <0.001 |       61 |     63400 |            0.10 |
+| Slice Logic    |    <0.001 |      178 |       --- |             --- |
+|   LUT as Logic |    <0.001 |       64 |     63400 |            0.10 |
 |   CARRY4       |    <0.001 |       12 |     15850 |            0.08 |
 |   Register     |    <0.001 |       69 |    126800 |            0.05 |
 |   F7/F8 Muxes  |    <0.001 |        1 |     63400 |           <0.01 |
-|   Others       |     0.000 |        9 |       --- |             --- |
-| Signals        |    <0.001 |      141 |       --- |             --- |
+|   Others       |     0.000 |        8 |       --- |             --- |
+| Signals        |    <0.001 |      143 |       --- |             --- |
 | I/O            |    <0.001 |       20 |       210 |            9.52 |
 | Static Power   |     0.097 |          |           |                 |
 | Total          |     0.098 |          |           |                 |

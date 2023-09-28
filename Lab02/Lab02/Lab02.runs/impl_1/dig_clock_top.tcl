@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/impl_1/dig_clock_top.tcl"
+  variable script "C:/Users/choprak/ECE212_Chopra_Hill/Lab02/Lab02/Lab02.runs/impl_1/dig_clock_top.tcl"
   variable category "vivado_impl"
 }
 
@@ -115,6 +115,8 @@ proc step_failed { step } {
 OPTRACE "impl_1" END { }
 }
 
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 
 OPTRACE "impl_1" START { ROLLUP_1 }
 OPTRACE "Phase: Init Design" START { ROLLUP_AUTO }
@@ -123,6 +125,7 @@ set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
   set_param chipscope.maxJobs 3
+  set_param synth.incrementalSynthesisCache C:/Users/choprak/ECE212_Chopra_Hill/Lab02/Lab02/.Xil/Vivado-6896-ECE419-6V259R3/incrSyn
   set_param xicom.use_bs_reader 1
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xc7a100tcsg324-1
@@ -131,13 +134,13 @@ OPTRACE "create in-memory project" START { }
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.cache/wt [current_project]
-  set_property parent.project_path C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.xpr [current_project]
-  set_property ip_output_repo C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.cache/ip [current_project]
+  set_property webtalk.parent_dir C:/Users/choprak/ECE212_Chopra_Hill/Lab02/Lab02/Lab02.cache/wt [current_project]
+  set_property parent.project_path C:/Users/choprak/ECE212_Chopra_Hill/Lab02/Lab02/Lab02.xpr [current_project]
+  set_property ip_output_repo C:/Users/choprak/ECE212_Chopra_Hill/Lab02/Lab02/Lab02.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/synth_1/dig_clock_top.dcp
+  add_files -quiet C:/Users/choprak/ECE212_Chopra_Hill/Lab02/Lab02/Lab02.runs/synth_1/dig_clock_top.dcp
 OPTRACE "read constraints: implementation" START { }
   read_xdc C:/Users/choprak/ECE212_Chopra_Hill/Lab02/constraints/Nexys-A7-100T-Master.xdc
 OPTRACE "read constraints: implementation" END { }

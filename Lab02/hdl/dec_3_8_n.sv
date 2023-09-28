@@ -10,7 +10,8 @@
 
 module dec_3_8_n(
     input logic [2:0] a,
-    output logic [7:0] y_n
+    output logic [7:0] y_n,
+    output logic dp_n
     );
 
     logic [7:0] y;
@@ -21,11 +22,28 @@ module dec_3_8_n(
             3'd1: y = 8'b00000010;
             3'd2: y = 8'b00000100;
             3'd3: y = 8'b00001000;
-            3'd4: y = 8'b00010000;
+            
+            3'd4: 
+                begin
+                 y = 8'b00010000;
+                // dp_n = 1'b0;
+                 end
+            
             3'd5: y = 8'b00100000;
-            3'd6: y = 8'b01000000;
+            
+            3'd6:
+                begin 
+                 y = 8'b01000000;
+                // dp_n = 1'b0;
+                end
+            
             3'd7: y = 8'b10000000;
-            default: y = 4'b00000000;
+            default: 
+               begin
+                     y = 4'b00000000;
+                     //dp_n = 1'b0; //CHECKME
+               end
+                     
         endcase
         y_n = ~y;
     end

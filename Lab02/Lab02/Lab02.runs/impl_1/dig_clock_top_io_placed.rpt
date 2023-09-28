@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date                      : Thu Sep 21 15:54:56 2023
+| Date                      : Thu Sep 28 14:46:45 2023
 | Host                      : ECE419-6V259R3 running 64-bit major release  (build 9200)
 | Command                   : report_io -file dig_clock_top_io_placed.rpt
 | Design                    : dig_clock_top

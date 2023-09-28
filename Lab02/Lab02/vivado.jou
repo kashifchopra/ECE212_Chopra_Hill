@@ -2,121 +2,110 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Thu Sep 21 13:07:42 2023
-# Process ID: 39516
-# Current directory: C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent34952 C:\Users\choprak\ECE212_Chopra_Hill\Lab01\Lab02\Lab02.xpr
-# Log file: C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/vivado.log
-# Journal file: C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02\vivado.jou
+# Start of session at: Thu Sep 28 13:14:15 2023
+# Process ID: 6896
+# Current directory: C:/Users/choprak/ECE212_Chopra_Hill/Lab02/Lab02
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent26828 C:\Users\choprak\ECE212_Chopra_Hill\Lab02\Lab02\Lab02.xpr
+# Log file: C:/Users/choprak/ECE212_Chopra_Hill/Lab02/Lab02/vivado.log
+# Journal file: C:/Users/choprak/ECE212_Chopra_Hill/Lab02/Lab02\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.xpr
+open_project C:/Users/choprak/ECE212_Chopra_Hill/Lab02/Lab02/Lab02.xpr
 update_compile_order -fileset sources_1
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-wait_on_run impl_1
 open_hw_manager
 connect_hw_server -allow_non_jtag
 open_hw_target
-set_property PROGRAM.FILE {C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/impl_1/dig_clock_top.bit} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/choprak/ECE212_Chopra_Hill/Lab02/Lab02/Lab02.runs/impl_1/dig_clock_top.bit} [get_hw_devices xc7a100t_0]
 current_hw_device [get_hw_devices xc7a100t_0]
 refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
 set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/impl_1/dig_clock_top.bit} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/choprak/ECE212_Chopra_Hill/Lab02/Lab02/Lab02.runs/impl_1/dig_clock_top.bit} [get_hw_devices xc7a100t_0]
 program_hw_devices [get_hw_devices xc7a100t_0]
 refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
 close_hw_manager
-reset_run synth_1
-update_compile_order -fileset sources_1
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-wait_on_run impl_1
-reset_run synth_1
-update_compile_order -fileset sources_1
-launch_runs synth_1 -jobs 6
-wait_on_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-wait_on_run impl_1
-open_hw_manager
-connect_hw_server -allow_non_jtag
-open_hw_target
-set_property PROGRAM.FILE {C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/impl_1/dig_clock_top.bit} [get_hw_devices xc7a100t_0]
-current_hw_device [get_hw_devices xc7a100t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/impl_1/dig_clock_top.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-close_hw_manager
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-wait_on_run impl_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
 reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 6
 wait_on_run impl_1
 open_hw_manager
 connect_hw_server -allow_non_jtag
 open_hw_target
-set_property PROGRAM.FILE {C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/impl_1/dig_clock_top.bit} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/choprak/ECE212_Chopra_Hill/Lab02/Lab02/Lab02.runs/impl_1/dig_clock_top.bit} [get_hw_devices xc7a100t_0]
 current_hw_device [get_hw_devices xc7a100t_0]
 refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
 set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/impl_1/dig_clock_top.bit} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/choprak/ECE212_Chopra_Hill/Lab02/Lab02/Lab02.runs/impl_1/dig_clock_top.bit} [get_hw_devices xc7a100t_0]
 program_hw_devices [get_hw_devices xc7a100t_0]
 refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-wait_on_run impl_1
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-wait_on_run impl_1
-reset_run synth_1
-launch_runs synth_1 -jobs 6
-wait_on_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-wait_on_run impl_1
 reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 6
 wait_on_run impl_1
 open_run impl_1
 set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/impl_1/dig_clock_top.bit} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/choprak/ECE212_Chopra_Hill/Lab02/Lab02/Lab02.runs/impl_1/dig_clock_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/choprak/ECE212_Chopra_Hill/Lab02/Lab02/Lab02.runs/impl_1/dig_clock_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw_manager
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/choprak/ECE212_Chopra_Hill/Lab02/Lab02/Lab02.runs/impl_1/dig_clock_top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/choprak/ECE212_Chopra_Hill/Lab02/Lab02/Lab02.runs/impl_1/dig_clock_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw_manager
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/choprak/ECE212_Chopra_Hill/Lab02/Lab02/Lab02.runs/impl_1/dig_clock_top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/choprak/ECE212_Chopra_Hill/Lab02/Lab02/Lab02.runs/impl_1/dig_clock_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw_manager
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/choprak/ECE212_Chopra_Hill/Lab02/Lab02/Lab02.runs/impl_1/dig_clock_top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/choprak/ECE212_Chopra_Hill/Lab02/Lab02/Lab02.runs/impl_1/dig_clock_top.bit} [get_hw_devices xc7a100t_0]
 program_hw_devices [get_hw_devices xc7a100t_0]
 refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
 reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 6
 wait_on_run impl_1
-reset_run synth_1
-launch_runs impl_1 -jobs 6
-wait_on_run impl_1
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-wait_on_run impl_1
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-wait_on_run impl_1
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-wait_on_run impl_1
-update_compile_order -fileset sources_1
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-wait_on_run impl_1
-update_compile_order -fileset sources_1
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-wait_on_run impl_1
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-wait_on_run impl_1
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/choprak/ECE212_Chopra_Hill/Lab02/Lab02/Lab02.runs/impl_1/dig_clock_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
 reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 6
 wait_on_run impl_1
@@ -125,81 +114,12 @@ launch_runs impl_1 -to_step write_bitstream -jobs 6
 wait_on_run impl_1
 set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/impl_1/dig_clock_top.bit} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/choprak/ECE212_Chopra_Hill/Lab02/Lab02/Lab02.runs/impl_1/dig_clock_top.bit} [get_hw_devices xc7a100t_0]
 program_hw_devices [get_hw_devices xc7a100t_0]
 refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw_manager
 reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 6
 wait_on_run impl_1
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/impl_1/dig_clock_top.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/impl_1/dig_clock_top.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/impl_1/dig_clock_top.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/impl_1/dig_clock_top.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/impl_1/dig_clock_top.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/impl_1/dig_clock_top.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/impl_1/dig_clock_top.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/impl_1/dig_clock_top.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/impl_1/dig_clock_top.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+open_hw_manager
+connect_hw_server -allow_non_jtag

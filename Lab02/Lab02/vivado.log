@@ -2,28 +2,24 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Thu Sep 21 13:07:42 2023
-# Process ID: 39516
-# Current directory: C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent34952 C:\Users\choprak\ECE212_Chopra_Hill\Lab01\Lab02\Lab02.xpr
-# Log file: C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/vivado.log
-# Journal file: C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02\vivado.jou
+# Start of session at: Thu Sep 28 13:14:15 2023
+# Process ID: 6896
+# Current directory: C:/Users/choprak/ECE212_Chopra_Hill/Lab02/Lab02
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent26828 C:\Users\choprak\ECE212_Chopra_Hill\Lab02\Lab02\Lab02.xpr
+# Log file: C:/Users/choprak/ECE212_Chopra_Hill/Lab02/Lab02/vivado.log
+# Journal file: C:/Users/choprak/ECE212_Chopra_Hill/Lab02/Lab02\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.xpr
-WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.gen/sources_1'.
+open_project C:/Users/choprak/ECE212_Chopra_Hill/Lab02/Lab02/Lab02.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02' since last save.
+WARNING: [filemgmt 56-2] Default IP Output Path : Could not find the directory 'C:/Users/choprak/ECE212_Chopra_Hill/Lab02/Lab02/Lab02.gen/sources_1', nor could it be found using path 'C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.gen/sources_1'.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1102.184 ; gain = 0.000
 update_compile_order -fileset sources_1
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-[Thu Sep 21 13:08:34 2023] Launched synth_1...
-Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/synth_1/runme.log
-[Thu Sep 21 13:08:34 2023] Launched impl_1...
-Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/impl_1/runme.log
 open_hw_manager
 connect_hw_server -allow_non_jtag
 INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
@@ -47,153 +43,154 @@ INFO: [Labtools 27-2221] Launch Output:
 
 
 
-connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 1088.695 ; gain = 0.000
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 1102.184 ; gain = 0.000
 open_hw_target
 INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292AE2392A
-set_property PROGRAM.FILE {C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/impl_1/dig_clock_top.bit} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/choprak/ECE212_Chopra_Hill/Lab02/Lab02/Lab02.runs/impl_1/dig_clock_top.bit} [get_hw_devices xc7a100t_0]
 current_hw_device [get_hw_devices xc7a100t_0]
 refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
 set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/impl_1/dig_clock_top.bit} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/choprak/ECE212_Chopra_Hill/Lab02/Lab02/Lab02.runs/impl_1/dig_clock_top.bit} [get_hw_devices xc7a100t_0]
 program_hw_devices [get_hw_devices xc7a100t_0]
 INFO: [Labtools 27-3164] End of startup status: HIGH
 refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
 INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
 close_hw_manager
-reset_run synth_1
-update_compile_order -fileset sources_1
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-[Thu Sep 21 13:32:33 2023] Launched synth_1...
-Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/synth_1/runme.log
-[Thu Sep 21 13:32:33 2023] Launched impl_1...
-Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/impl_1/runme.log
-reset_run synth_1
-update_compile_order -fileset sources_1
-launch_runs synth_1 -jobs 6
-[Thu Sep 21 13:33:30 2023] Launched synth_1...
-Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/synth_1/runme.log
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-[Thu Sep 21 13:34:37 2023] Launched impl_1...
-Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/impl_1/runme.log
-open_hw_manager
-connect_hw_server -allow_non_jtag
-INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
-INFO: [Labtools 27-2222] Launching hw_server...
-INFO: [Labtools 27-2221] Launch Output:
-
-****** Xilinx hw_server v2020.2
-  **** Build date : Nov 18 2020 at 10:01:48
-    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
-
-
-INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
-INFO: [Labtools 27-3417] Launching cs_server...
-INFO: [Labtools 27-2221] Launch Output:
-
-
-******** Xilinx cs_server v2020.2
-  ****** Build date   : Nov 03 2020-16:02:56
-    **** Build number : 2020.2.1604437376
-      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
-
-
-
-connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 2678.125 ; gain = 0.000
-open_hw_target
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292AE2392A
-set_property PROGRAM.FILE {C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/impl_1/dig_clock_top.bit} [get_hw_devices xc7a100t_0]
-current_hw_device [get_hw_devices xc7a100t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/impl_1/dig_clock_top.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-close_hw_manager
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-[Thu Sep 21 14:13:46 2023] Launched synth_1...
-Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/synth_1/runme.log
-[Thu Sep 21 14:13:46 2023] Launched impl_1...
-Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/impl_1/runme.log
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-[Thu Sep 21 14:14:30 2023] Launched synth_1...
-Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/synth_1/runme.log
-[Thu Sep 21 14:14:30 2023] Launched impl_1...
-Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/impl_1/runme.log
-open_hw_manager
-connect_hw_server -allow_non_jtag
-INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
-INFO: [Labtools 27-2222] Launching hw_server...
-INFO: [Labtools 27-2221] Launch Output:
-
-****** Xilinx hw_server v2020.2
-  **** Build date : Nov 18 2020 at 10:01:48
-    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
-
-
-INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
-INFO: [Labtools 27-3417] Launching cs_server...
-INFO: [Labtools 27-2221] Launch Output:
-
-
-******** Xilinx cs_server v2020.2
-  ****** Build date   : Nov 03 2020-16:02:56
-    **** Build number : 2020.2.1604437376
-      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
-
-
-
-connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 2691.277 ; gain = 0.000
-open_hw_target
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292AE2392A
-set_property PROGRAM.FILE {C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/impl_1/dig_clock_top.bit} [get_hw_devices xc7a100t_0]
-current_hw_device [get_hw_devices xc7a100t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/impl_1/dig_clock_top.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-[Thu Sep 21 14:24:04 2023] Launched synth_1...
-Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/synth_1/runme.log
-[Thu Sep 21 14:24:04 2023] Launched impl_1...
-Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/impl_1/runme.log
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-[Thu Sep 21 14:26:19 2023] Launched synth_1...
-Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/synth_1/runme.log
-[Thu Sep 21 14:26:19 2023] Launched impl_1...
-Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/impl_1/runme.log
-reset_run synth_1
-launch_runs synth_1 -jobs 6
-[Thu Sep 21 14:28:40 2023] Launched synth_1...
-Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/synth_1/runme.log
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-[Thu Sep 21 14:29:17 2023] Launched impl_1...
-Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/impl_1/runme.log
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-[Thu Sep 21 14:30:12 2023] Launched synth_1...
-Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/synth_1/runme.log
-[Thu Sep 21 14:30:12 2023] Launched impl_1...
-Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/impl_1/runme.log
-open_run impl_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: dig_clock_top
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3002.801 ; gain = 0.000
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 3225.809 ; gain = 258.738
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'dig_clock_top' [C:/Users/choprak/ECE212_Chopra_Hill/Lab02/Lab02/Lab02.srcs/sources_1/new/dig_clock_top.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'dig_clock' [C:/Users/choprak/ECE212_Chopra_Hill/Lab02/Lab02/Lab02.srcs/sources_1/new/dig_clock.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'period_enb' [C:/Users/choprak/ECE212_Chopra_Hill/Lab02/hdl/period_enb.sv:20]
+	Parameter PERIOD_MS bound to: 1000 - type: integer 
+	Parameter PERIOD_US bound to: 1000000 - type: integer 
+	Parameter PERIOD_NS bound to: 1000000000 - type: integer 
+	Parameter CLKFREQ_MHZ bound to: 100 - type: integer 
+	Parameter CLKPD_NS bound to: 10 - type: integer 
+	Parameter PERIOD_COUNT_LIMIT bound to: 100000000 - type: integer 
+	Parameter PERIOD_COUNT_BITS bound to: 27 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'period_enb' (1#1) [C:/Users/choprak/ECE212_Chopra_Hill/Lab02/hdl/period_enb.sv:20]
+INFO: [Synth 8-6157] synthesizing module 'counter_rc_mod' [C:/Users/choprak/ECE212_Chopra_Hill/Lab02/hdl/counter_rc_mod.sv:11]
+	Parameter MOD bound to: 10 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter_rc_mod' (2#1) [C:/Users/choprak/ECE212_Chopra_Hill/Lab02/hdl/counter_rc_mod.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'counter_rc_mod__parameterized0' [C:/Users/choprak/ECE212_Chopra_Hill/Lab02/hdl/counter_rc_mod.sv:11]
+	Parameter MOD bound to: 6 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter_rc_mod__parameterized0' (2#1) [C:/Users/choprak/ECE212_Chopra_Hill/Lab02/hdl/counter_rc_mod.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'hr_cnt' [C:/Users/choprak/ECE212_Chopra_Hill/Lab02/Lab02/Lab02.srcs/sources_1/new/hr_cnt.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'hr_cnt' (3#1) [C:/Users/choprak/ECE212_Chopra_Hill/Lab02/Lab02/Lab02.srcs/sources_1/new/hr_cnt.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'dig_clock' (4#1) [C:/Users/choprak/ECE212_Chopra_Hill/Lab02/Lab02/Lab02.srcs/sources_1/new/dig_clock.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'sevenseg_ctl' [C:/Users/choprak/ECE212_Chopra_Hill/Lab02/hdl/sevenseg_ctl.sv:18]
+INFO: [Synth 8-6157] synthesizing module 'period_enb__parameterized0' [C:/Users/choprak/ECE212_Chopra_Hill/Lab02/hdl/period_enb.sv:20]
+	Parameter PERIOD_MS bound to: 1 - type: integer 
+	Parameter PERIOD_US bound to: 1000 - type: integer 
+	Parameter PERIOD_NS bound to: 1000000 - type: integer 
+	Parameter CLKFREQ_MHZ bound to: 100 - type: integer 
+	Parameter CLKPD_NS bound to: 10 - type: integer 
+	Parameter PERIOD_COUNT_LIMIT bound to: 100000 - type: integer 
+	Parameter PERIOD_COUNT_BITS bound to: 17 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'period_enb__parameterized0' (4#1) [C:/Users/choprak/ECE212_Chopra_Hill/Lab02/hdl/period_enb.sv:20]
+INFO: [Synth 8-6157] synthesizing module 'counter' [C:/Users/choprak/ECE212_Chopra_Hill/Lab02/hdl/counter.sv:11]
+	Parameter W bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter' (5#1) [C:/Users/choprak/ECE212_Chopra_Hill/Lab02/hdl/counter.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'dec_3_8_n' [C:/Users/choprak/ECE212_Chopra_Hill/Lab02/hdl/dec_3_8_n.sv:11]
+INFO: [Synth 8-226] default block is never used [C:/Users/choprak/ECE212_Chopra_Hill/Lab02/hdl/dec_3_8_n.sv:19]
+INFO: [Synth 8-6155] done synthesizing module 'dec_3_8_n' (6#1) [C:/Users/choprak/ECE212_Chopra_Hill/Lab02/hdl/dec_3_8_n.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'mux8' [C:/Users/choprak/ECE212_Chopra_Hill/Lab02/hdl/mux8.sv:11]
+	Parameter W bound to: 7 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/choprak/ECE212_Chopra_Hill/Lab02/hdl/mux8.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'mux8' (7#1) [C:/Users/choprak/ECE212_Chopra_Hill/Lab02/hdl/mux8.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'seven_seg_n' [C:/Users/choprak/ECE212_Chopra_Hill/Lab02/hdl/sevenseg_ext_n.sv:12]
+INFO: [Synth 8-6155] done synthesizing module 'seven_seg_n' (8#1) [C:/Users/choprak/ECE212_Chopra_Hill/Lab02/hdl/sevenseg_ext_n.sv:12]
+INFO: [Synth 8-6155] done synthesizing module 'sevenseg_ctl' (9#1) [C:/Users/choprak/ECE212_Chopra_Hill/Lab02/hdl/sevenseg_ctl.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'dig_clock_top' (10#1) [C:/Users/choprak/ECE212_Chopra_Hill/Lab02/Lab02/Lab02.srcs/sources_1/new/dig_clock_top.sv:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3271.504 ; gain = 304.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 3290.414 ; gain = 323.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 3290.414 ; gain = 323.344
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 3290.414 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/choprak/ECE212_Chopra_Hill/Lab02/constraints/Nexys-A7-100T-Master.xdc]
+Finished Parsing XDC File [C:/Users/choprak/ECE212_Chopra_Hill/Lab02/constraints/Nexys-A7-100T-Master.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3403.395 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 3497.137 ; gain = 530.066
+29 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:16 . Memory (MB): peak = 3497.137 ; gain = 819.617
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Sep 28 13:35:36 2023] Launched synth_1...
+Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab02/Lab02/Lab02.runs/synth_1/runme.log
+[Thu Sep 28 13:35:36 2023] Launched impl_1...
+Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab02/Lab02/Lab02.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 03 2020-16:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 3522.348 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292AE2392A
+set_property PROGRAM.FILE {C:/Users/choprak/ECE212_Chopra_Hill/Lab02/Lab02/Lab02.runs/impl_1/dig_clock_top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/choprak/ECE212_Chopra_Hill/Lab02/Lab02/Lab02.runs/impl_1/dig_clock_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Sep 28 13:47:21 2023] Launched synth_1...
+Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab02/Lab02/Lab02.runs/synth_1/runme.log
+[Thu Sep 28 13:47:21 2023] Launched impl_1...
+Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab02/Lab02/Lab02.runs/impl_1/runme.log
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3542.000 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2020.2
@@ -205,219 +202,226 @@ INFO: [Project 1-853] Binary constraint restore complete.
 Reading XDEF placement.
 Reading placer database...
 Reading XDEF routing.
-Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 3689.961 ; gain = 0.000
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 4167.840 ; gain = 0.000
 Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 3689.961 ; gain = 0.000
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3689.961 ; gain = 0.000
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 4167.840 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4167.840 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-open_run: Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 3831.383 ; gain = 1133.734
+open_run: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 4243.758 ; gain = 705.270
 set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/impl_1/dig_clock_top.bit} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/choprak/ECE212_Chopra_Hill/Lab02/Lab02/Lab02.runs/impl_1/dig_clock_top.bit} [get_hw_devices xc7a100t_0]
 program_hw_devices [get_hw_devices xc7a100t_0]
 INFO: [Labtools 27-3164] End of startup status: HIGH
 refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
 INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-[Thu Sep 21 14:35:35 2023] Launched synth_1...
-Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/synth_1/runme.log
-[Thu Sep 21 14:35:35 2023] Launched impl_1...
-Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/impl_1/runme.log
-reset_run synth_1
-launch_runs impl_1 -jobs 6
-[Thu Sep 21 14:37:13 2023] Launched synth_1...
-Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/synth_1/runme.log
-[Thu Sep 21 14:37:13 2023] Launched impl_1...
-Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/impl_1/runme.log
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-[Thu Sep 21 14:40:38 2023] Launched synth_1...
-Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/synth_1/runme.log
-[Thu Sep 21 14:40:38 2023] Launched impl_1...
-Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/impl_1/runme.log
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-[Thu Sep 21 14:46:19 2023] Launched synth_1...
-Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/synth_1/runme.log
-[Thu Sep 21 14:46:19 2023] Launched impl_1...
-Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/impl_1/runme.log
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-[Thu Sep 21 14:53:47 2023] Launched synth_1...
-Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/synth_1/runme.log
-[Thu Sep 21 14:53:47 2023] Launched impl_1...
-Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/impl_1/runme.log
-update_compile_order -fileset sources_1
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-[Thu Sep 21 14:55:30 2023] Launched synth_1...
-Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/synth_1/runme.log
-[Thu Sep 21 14:55:30 2023] Launched impl_1...
-Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/impl_1/runme.log
-update_compile_order -fileset sources_1
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-[Thu Sep 21 15:00:20 2023] Launched synth_1...
-Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/synth_1/runme.log
-[Thu Sep 21 15:00:20 2023] Launched impl_1...
-Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/impl_1/runme.log
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-[Thu Sep 21 15:01:25 2023] Launched synth_1...
-Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/synth_1/runme.log
-[Thu Sep 21 15:01:25 2023] Launched impl_1...
-Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/impl_1/runme.log
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-[Thu Sep 21 15:04:31 2023] Launched synth_1...
-Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/synth_1/runme.log
-[Thu Sep 21 15:04:31 2023] Launched impl_1...
-Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/impl_1/runme.log
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-[Thu Sep 21 15:08:58 2023] Launched synth_1...
-Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/synth_1/runme.log
-[Thu Sep 21 15:08:58 2023] Launched impl_1...
-Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/impl_1/runme.log
 set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/impl_1/dig_clock_top.bit} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/choprak/ECE212_Chopra_Hill/Lab02/Lab02/Lab02.runs/impl_1/dig_clock_top.bit} [get_hw_devices xc7a100t_0]
 program_hw_devices [get_hw_devices xc7a100t_0]
 INFO: [Labtools 27-3164] End of startup status: HIGH
 refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
 INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
 reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 6
-[Thu Sep 21 15:10:40 2023] Launched synth_1...
-Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/synth_1/runme.log
-[Thu Sep 21 15:10:40 2023] Launched impl_1...
-Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/impl_1/runme.log
-reset_run synth_1
-WARNING: [Vivado 12-1017] Problems encountered:
-1. Failed to delete one or more files in run directory C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/synth_1
+[Thu Sep 28 13:51:49 2023] Launched synth_1...
+Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab02/Lab02/Lab02.runs/synth_1/runme.log
+[Thu Sep 28 13:51:49 2023] Launched impl_1...
+Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab02/Lab02/Lab02.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
 
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-[Thu Sep 21 15:13:34 2023] Launched synth_1...
-Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/synth_1/runme.log
-[Thu Sep 21 15:13:34 2023] Launched impl_1...
-Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/impl_1/runme.log
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 03 2020-16:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 4326.246 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292AE2392A
+set_property PROGRAM.FILE {C:/Users/choprak/ECE212_Chopra_Hill/Lab02/Lab02/Lab02.runs/impl_1/dig_clock_top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
 set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/impl_1/dig_clock_top.bit} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/choprak/ECE212_Chopra_Hill/Lab02/Lab02/Lab02.runs/impl_1/dig_clock_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Sep 28 13:57:10 2023] Launched synth_1...
+Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab02/Lab02/Lab02.runs/synth_1/runme.log
+[Thu Sep 28 13:57:10 2023] Launched impl_1...
+Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab02/Lab02/Lab02.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 03 2020-16:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 4397.539 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292AE2392A
+set_property PROGRAM.FILE {C:/Users/choprak/ECE212_Chopra_Hill/Lab02/Lab02/Lab02.runs/impl_1/dig_clock_top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/choprak/ECE212_Chopra_Hill/Lab02/Lab02/Lab02.runs/impl_1/dig_clock_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Sep 28 14:09:02 2023] Launched synth_1...
+Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab02/Lab02/Lab02.runs/synth_1/runme.log
+[Thu Sep 28 14:09:02 2023] Launched impl_1...
+Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab02/Lab02/Lab02.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 03 2020-16:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 4496.371 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292AE2392A
+set_property PROGRAM.FILE {C:/Users/choprak/ECE212_Chopra_Hill/Lab02/Lab02/Lab02.runs/impl_1/dig_clock_top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/choprak/ECE212_Chopra_Hill/Lab02/Lab02/Lab02.runs/impl_1/dig_clock_top.bit} [get_hw_devices xc7a100t_0]
 program_hw_devices [get_hw_devices xc7a100t_0]
 INFO: [Labtools 27-3164] End of startup status: HIGH
 refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
 INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
 reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 6
-[Thu Sep 21 15:19:40 2023] Launched synth_1...
-Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/synth_1/runme.log
-[Thu Sep 21 15:19:40 2023] Launched impl_1...
-Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/impl_1/runme.log
+[Thu Sep 28 14:12:14 2023] Launched synth_1...
+Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab02/Lab02/Lab02.runs/synth_1/runme.log
+[Thu Sep 28 14:12:14 2023] Launched impl_1...
+Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab02/Lab02/Lab02.runs/impl_1/runme.log
 set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/impl_1/dig_clock_top.bit} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/choprak/ECE212_Chopra_Hill/Lab02/Lab02/Lab02.runs/impl_1/dig_clock_top.bit} [get_hw_devices xc7a100t_0]
 program_hw_devices [get_hw_devices xc7a100t_0]
 INFO: [Labtools 27-3164] End of startup status: HIGH
 refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
 INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
 reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 6
-[Thu Sep 21 15:24:10 2023] Launched synth_1...
-Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/synth_1/runme.log
-[Thu Sep 21 15:24:10 2023] Launched impl_1...
-Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/impl_1/runme.log
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/impl_1/dig_clock_top.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+[Thu Sep 28 14:38:25 2023] Launched synth_1...
+Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab02/Lab02/Lab02.runs/synth_1/runme.log
+[Thu Sep 28 14:38:26 2023] Launched impl_1...
+Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab02/Lab02/Lab02.runs/impl_1/runme.log
 reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 6
-[Thu Sep 21 15:27:41 2023] Launched synth_1...
-Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/synth_1/runme.log
-[Thu Sep 21 15:27:41 2023] Launched impl_1...
-Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/impl_1/runme.log
+[Thu Sep 28 14:40:02 2023] Launched synth_1...
+Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab02/Lab02/Lab02.runs/synth_1/runme.log
+[Thu Sep 28 14:40:02 2023] Launched impl_1...
+Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab02/Lab02/Lab02.runs/impl_1/runme.log
 set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/impl_1/dig_clock_top.bit} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/choprak/ECE212_Chopra_Hill/Lab02/Lab02/Lab02.runs/impl_1/dig_clock_top.bit} [get_hw_devices xc7a100t_0]
 program_hw_devices [get_hw_devices xc7a100t_0]
 INFO: [Labtools 27-3164] End of startup status: HIGH
 refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
 INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
 reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 6
-[Thu Sep 21 15:32:14 2023] Launched synth_1...
-Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/synth_1/runme.log
-[Thu Sep 21 15:32:14 2023] Launched impl_1...
-Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/impl_1/runme.log
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/impl_1/dig_clock_top.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+[Thu Sep 28 14:45:50 2023] Launched synth_1...
+Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab02/Lab02/Lab02.runs/synth_1/runme.log
+[Thu Sep 28 14:45:50 2023] Launched impl_1...
+Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab02/Lab02/Lab02.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 03 2020-16:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 4524.750 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292AE2392A
+set_property PROGRAM.FILE {C:/Users/choprak/ECE212_Chopra_Hill/Lab02/Lab02/Lab02.runs/impl_1/dig_clock_top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
 INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-[Thu Sep 21 15:37:44 2023] Launched synth_1...
-Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/synth_1/runme.log
-[Thu Sep 21 15:37:44 2023] Launched impl_1...
-Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/impl_1/runme.log
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/impl_1/dig_clock_top.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-[Thu Sep 21 15:41:09 2023] Launched synth_1...
-Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/synth_1/runme.log
-[Thu Sep 21 15:41:09 2023] Launched impl_1...
-Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/impl_1/runme.log
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/impl_1/dig_clock_top.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-[Thu Sep 21 15:48:34 2023] Launched synth_1...
-Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/synth_1/runme.log
-[Thu Sep 21 15:48:34 2023] Launched impl_1...
-Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/impl_1/runme.log
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/impl_1/dig_clock_top.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-[Thu Sep 21 15:54:00 2023] Launched synth_1...
-Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/synth_1/runme.log
-[Thu Sep 21 15:54:00 2023] Launched impl_1...
-Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/impl_1/runme.log
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/Users/choprak/ECE212_Chopra_Hill/Lab01/Lab02/Lab02.runs/impl_1/dig_clock_top.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-exit
-INFO: [Common 17-206] Exiting Vivado at Thu Sep 21 16:12:37 2023...

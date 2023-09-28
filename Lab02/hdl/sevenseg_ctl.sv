@@ -33,7 +33,7 @@ module sevenseg_ctl(
 
     counter #(.W(3)) U_CT (.clk, .rst, .enb, .q(digit));
 
-    dec_3_8_n U_DEC (.a(digit), .y_n(an_n));
+    dec_3_8_n U_DEC (.a(digit), .y_n(an_n), .dp_n);
 
     mux8 #(.W(7)) U_MUX8 (.sel(digit), .d0, .d1, .d2, .d3, .d4, .d5, .d6, .d7, .y(muxd));
 

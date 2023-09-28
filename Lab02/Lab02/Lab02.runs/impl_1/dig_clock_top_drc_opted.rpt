@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Thu Sep 21 15:54:54 2023
+| Date         : Thu Sep 28 14:46:43 2023
 | Host         : ECE419-6V259R3 running 64-bit major release  (build 9200)
 | Command      : report_drc -file dig_clock_top_drc_opted.rpt -pb dig_clock_top_drc_opted.pb -rpx dig_clock_top_drc_opted.rpx
 | Design       : dig_clock_top

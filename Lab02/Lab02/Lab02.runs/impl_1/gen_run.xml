@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1695326040">
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1695926750">
   <File Type="BITSTR-BMM" Name="dig_clock_top_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="dig_clock_top_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="dig_clock_top_timing_summary_init.rpt"/>
@@ -77,21 +77,21 @@
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PPRDIR/../../Lab02/hdl/counter.sv">
+    <File Path="$PPRDIR/../hdl/counter.sv">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../Lab02/hdl/counter_rc_mod.sv">
+    <File Path="$PPRDIR/../hdl/counter_rc_mod.sv">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../Lab02/hdl/dec_3_8_n.sv">
+    <File Path="$PPRDIR/../hdl/dec_3_8_n.sv">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -112,28 +112,28 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../Lab02/hdl/mux8.sv">
+    <File Path="$PPRDIR/../hdl/mux8.sv">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../Lab02/hdl/period_enb.sv">
+    <File Path="$PPRDIR/../hdl/period_enb.sv">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../Lab02/hdl/sevenseg_ctl.sv">
+    <File Path="$PPRDIR/../hdl/sevenseg_ctl.sv">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../Lab02/hdl/sevenseg_ext_n.sv">
+    <File Path="$PPRDIR/../hdl/sevenseg_ext_n.sv">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -147,7 +147,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../Lab02/hdl/debounce.sv">
+    <File Path="$PPRDIR/../hdl/debounce.sv">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -155,7 +155,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../Lab02/hdl/single_pulser.sv">
+    <File Path="$PPRDIR/../hdl/single_pulser.sv">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -194,7 +194,7 @@
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
-    <File Path="$PPRDIR/../../Lab02/constraints/Nexys-A7-100T-Master.xdc">
+    <File Path="$PPRDIR/../constraints/Nexys-A7-100T-Master.xdc">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
