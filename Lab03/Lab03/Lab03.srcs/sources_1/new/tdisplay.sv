@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 09/28/2023 04:51:27 PM
+// Create Date: 10/05/2023 02:00:22 PM
 // Design Name: 
-// Module Name: conv_sgnmag
+// Module Name: convert_top
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,21 +20,15 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module conv_sgnmag(
-input logic signed [17:0] tx10,
-output  logic [16:0] tx10_conv,
-output logic sign
+module tdisplay( input logic [12:0] tc,
+input logic c_f,
+output logic sign,
+output logic [3:0] thou, hund, tens, ones
     );
     
-assign sign = tx10[17]; //sets sign = sign bit 
-logic [17:0] conv;
-assign conv = ~tx10 +'1;
-
-always_comb begin
-    
-    if(sign) tx10_conv[16:0] = conv[16:0]; //if sign bit is 1, negate the value of the others
-    else tx10_conv[16:0] =  tx10[16:0];
-    
-end
+    tconvert TCONVERT (.tc, .c_f, .tx10);
+    conv_sgnmag CONV_SGNMAG (.tx10, .tx10_conv, .sign);  
+    round ROUND (.tx10_conv,.tx10_convrnd);
+    dbl_dabble_ext (.b(tx10_convrnd), .thou(thousands), .hund(hundreds), .tens(tens), .ones(ones));
     
 endmodule

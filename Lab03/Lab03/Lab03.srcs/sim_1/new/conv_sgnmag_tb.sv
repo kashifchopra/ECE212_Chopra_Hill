@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 09/28/2023 04:51:27 PM
+// Create Date: 10/05/2023 03:43:36 PM
 // Design Name: 
-// Module Name: conv_sgnmag
+// Module Name: conv_sgnmag_tb
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -19,22 +19,30 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
+module conv_sgnmag_tb;
 
-module conv_sgnmag(
-input logic signed [17:0] tx10,
-output  logic [16:0] tx10_conv,
-output logic sign
-    );
-    
-assign sign = tx10[17]; //sets sign = sign bit 
-logic [17:0] conv;
-assign conv = ~tx10 +'1;
+logic signed [17:0]tx10; 
+logic sign; 
+logic signed [16:0] tx10_conv;
 
-always_comb begin
+conv_sgnmag CONV_SGNMAG_TB(.tx10, .sign, .tx10_conv);
+
+
+//generate clock
+parameter CLK_PD = 10;
+
+    initial begin
     
-    if(sign) tx10_conv[16:0] = conv[16:0]; //if sign bit is 1, negate the value of the others
-    else tx10_conv[16:0] =  tx10[16:0];
+    tx10 = {14'd10,4'd0};
+    #10;
     
-end
+     tx10 =  18'b11_0000_0000_0000_0000;  //-ve test; this is -1
+    #10;
+   
     
+    $stop;
+    
+    end
+
+
 endmodule

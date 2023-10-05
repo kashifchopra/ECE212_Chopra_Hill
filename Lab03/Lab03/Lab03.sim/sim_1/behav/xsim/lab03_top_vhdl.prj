@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../hdl/TWICtl.vhd" \
+"../../../../../hdl/TempSensorCtl.vhd" \
+
+# Do not sort compile order
+nosort

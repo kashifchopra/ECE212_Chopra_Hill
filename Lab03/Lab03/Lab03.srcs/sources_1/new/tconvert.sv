@@ -34,7 +34,7 @@ assign tc8 = tc<<3;
 assign tc2 = tc<<1; 
 
 always_comb begin
-    if(c_f) tx10 = tc16 +tc2 + {14'd320, 4'b0000}; // MUX functionality: If c_f is 1 then do the conversion to Fah by *18 +320 concatenate
+    if(c_f) tx10 = (tc16 + tc2) + {14'd320, 4'b0000}; // MUX functionality: If c_f is 1 then do the conversion to Fah by *18 +320 concatenate
     else tx10 = tc8 + tc2;
 end 
 
