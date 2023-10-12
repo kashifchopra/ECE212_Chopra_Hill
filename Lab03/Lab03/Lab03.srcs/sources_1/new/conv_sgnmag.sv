@@ -27,12 +27,12 @@ output logic sign
     );
     
 assign sign = tx10[17]; //sets sign = sign bit 
-logic [17:0] conv;
-assign conv = ~tx10 +'1;
 
 always_comb begin
     
-    if(sign) tx10_conv[16:0] = conv[16:0]; //if sign bit is 1, negate the value of the others
+    if(sign) begin
+        tx10_conv[16:0] = ~tx10[16:0] + 1;
+        end 
     else tx10_conv[16:0] =  tx10[16:0];
     
 end

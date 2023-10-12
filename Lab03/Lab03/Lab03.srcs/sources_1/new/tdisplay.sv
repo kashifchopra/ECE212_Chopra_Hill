@@ -26,9 +26,13 @@ output logic sign,
 output logic [3:0] thou, hund, tens, ones
     );
     
-    tconvert TCONVERT (.tc, .c_f, .tx10);
-    conv_sgnmag CONV_SGNMAG (.tx10, .tx10_conv, .sign);  
-    round ROUND (.tx10_conv,.tx10_convrnd);
-    dbl_dabble_ext (.b(tx10_convrnd), .thou(thousands), .hund(hundreds), .tens(tens), .ones(ones));
+    logic [17:0] tx10_wire; 
+    logic [16:0] tx10_conv_wire;
+    logic [12:0] tx10_convrnd_wire;
+    
+    tconvert TCONVERT (.tc, .c_f, .tx10(tx10_wire));
+    conv_sgnmag CONV_SGNMAG (.tx10(tx10_wire), .tx10_conv(tx10_conv_wire), .sign);  
+    round ROUND (.tx10_conv(tx10_conv_wire),.tx10_convrnd(tx10_convrnd_wire));
+    dbl_dabble_ext DBL_DABBLE_EXT (.b(tx10_convrnd_wire), .thou, .hund, .tens, .ones);
     
 endmodule

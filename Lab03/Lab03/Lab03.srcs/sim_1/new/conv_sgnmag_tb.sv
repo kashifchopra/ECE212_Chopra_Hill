@@ -23,7 +23,7 @@ module conv_sgnmag_tb;
 
 logic signed [17:0]tx10; 
 logic sign; 
-logic signed [16:0] tx10_conv;
+logic [16:0] tx10_conv;
 
 conv_sgnmag CONV_SGNMAG_TB(.tx10, .sign, .tx10_conv);
 
@@ -32,6 +32,11 @@ conv_sgnmag CONV_SGNMAG_TB(.tx10, .sign, .tx10_conv);
 parameter CLK_PD = 10;
 
     initial begin
+    
+    tx10 = -1;
+    #10;
+    tx10 = -2;
+    #10;
     
     tx10 = {14'd10,4'd0};
     #10;
