@@ -70,6 +70,8 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 3
+set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a100tcsg324-1
 
@@ -87,8 +89,14 @@ OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib -sv {
   C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.srcs/sources_1/new/conv_sgnmag.sv
+  C:/Users/choprak/Desktop/counter.sv
   C:/Users/choprak/ECE212_Chopra_Hill/Lab03/hdl/dbl_dabble_ext.sv
+  C:/Users/choprak/Desktop/dec_3_8_n.sv
+  C:/Users/choprak/Desktop/mux8.sv
+  C:/Users/choprak/Desktop/period_enb.sv
   C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.srcs/sources_1/new/round.sv
+  C:/Users/choprak/ECE212_Chopra_Hill/Lab03/hdl/sevenseg_ctl.sv
+  C:/Users/choprak/Desktop/sevenseg_ext_n.sv
   C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.srcs/sources_1/new/tconvert.sv
   C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.srcs/sources_1/new/tdisplay.sv
   C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.srcs/sources_1/new/lab03_top.sv
@@ -106,6 +114,9 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
+read_xdc C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.srcs/constrs_1/new/Lab3_constraints.xdc
+set_property used_in_implementation false [get_files C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.srcs/constrs_1/new/Lab3_constraints.xdc]
+
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
 

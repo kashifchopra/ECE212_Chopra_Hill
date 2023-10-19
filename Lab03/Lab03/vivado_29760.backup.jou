@@ -1,0 +1,69 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Oct 12 13:12:10 2023
+# Process ID: 29760
+# Current directory: C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent24540 C:\Users\choprak\ECE212_Chopra_Hill\Lab03\Lab03\Lab03.xpr
+# Log file: C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/vivado.log
+# Journal file: C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source conv_sgnmag_tb.tcl
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+close_sim
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.srcs/sim_1/new/round_tb.sv w ]
+add_files -fileset sim_1 C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.srcs/sim_1/new/round_tb.sv
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top round_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source round_tb.tcl
+relaunch_sim
+close_sim
+update_compile_order -fileset sources_1
+launch_simulation
+source round_tb.tcl
+close_sim
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+open_run impl_1
+close_design
+update_compile_order -fileset sources_1

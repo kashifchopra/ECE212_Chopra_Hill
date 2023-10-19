@@ -1,0 +1,710 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Oct 12 13:12:10 2023
+# Process ID: 29760
+# Current directory: C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent24540 C:\Users\choprak\ECE212_Chopra_Hill\Lab03\Lab03\Lab03.xpr
+# Log file: C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/vivado.log
+# Journal file: C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.xpr
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'conv_sgnmag_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj conv_sgnmag_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.sim/sim_1/behav/xsim'
+"xelab -wto c1f0dba3cc3b4fb7a21d655159a26b87 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot conv_sgnmag_tb_behav xil_defaultlib.conv_sgnmag_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto c1f0dba3cc3b4fb7a21d655159a26b87 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot conv_sgnmag_tb_behav xil_defaultlib.conv_sgnmag_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "conv_sgnmag_tb_behav -key {Behavioral:sim_1:Functional:conv_sgnmag_tb} -tclbatch {conv_sgnmag_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source conv_sgnmag_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$stop called at time : 20 ns : File "C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.srcs/sim_1/new/conv_sgnmag_tb.sv" Line 43
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'conv_sgnmag_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1088.598 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'conv_sgnmag_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj conv_sgnmag_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.srcs/sources_1/new/conv_sgnmag.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv_sgnmag
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.srcs/sim_1/new/conv_sgnmag_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv_sgnmag_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.sim/sim_1/behav/xsim'
+"xelab -wto c1f0dba3cc3b4fb7a21d655159a26b87 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot conv_sgnmag_tb_behav xil_defaultlib.conv_sgnmag_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto c1f0dba3cc3b4fb7a21d655159a26b87 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot conv_sgnmag_tb_behav xil_defaultlib.conv_sgnmag_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.conv_sgnmag
+Compiling module xil_defaultlib.conv_sgnmag_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot conv_sgnmag_tb_behav
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.sim/sim_1/behav/xsim/xsim.dir/conv_sgnmag_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu Oct 12 13:18:20 2023...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+$stop called at time : 20 ns : File "C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.srcs/sim_1/new/conv_sgnmag_tb.sv" Line 43
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 1092.109 ; gain = 0.109
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'conv_sgnmag_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj conv_sgnmag_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.srcs/sources_1/new/conv_sgnmag.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv_sgnmag
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.srcs/sim_1/new/conv_sgnmag_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv_sgnmag_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.sim/sim_1/behav/xsim'
+"xelab -wto c1f0dba3cc3b4fb7a21d655159a26b87 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot conv_sgnmag_tb_behav xil_defaultlib.conv_sgnmag_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto c1f0dba3cc3b4fb7a21d655159a26b87 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot conv_sgnmag_tb_behav xil_defaultlib.conv_sgnmag_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.conv_sgnmag
+Compiling module xil_defaultlib.conv_sgnmag_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot conv_sgnmag_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+$stop called at time : 20 ns : File "C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.srcs/sim_1/new/conv_sgnmag_tb.sv" Line 43
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1094.461 ; gain = 2.254
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'conv_sgnmag_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj conv_sgnmag_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.srcs/sources_1/new/conv_sgnmag.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv_sgnmag
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.srcs/sim_1/new/conv_sgnmag_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv_sgnmag_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.sim/sim_1/behav/xsim'
+"xelab -wto c1f0dba3cc3b4fb7a21d655159a26b87 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot conv_sgnmag_tb_behav xil_defaultlib.conv_sgnmag_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto c1f0dba3cc3b4fb7a21d655159a26b87 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot conv_sgnmag_tb_behav xil_defaultlib.conv_sgnmag_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3823] variable 'conv' might have multiple concurrent drivers [C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.srcs/sources_1/new/conv_sgnmag.sv:33]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.conv_sgnmag
+Compiling module xil_defaultlib.conv_sgnmag_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot conv_sgnmag_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+$stop called at time : 20 ns : File "C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.srcs/sim_1/new/conv_sgnmag_tb.sv" Line 43
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1095.141 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'conv_sgnmag_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj conv_sgnmag_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.srcs/sources_1/new/conv_sgnmag.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv_sgnmag
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.srcs/sim_1/new/conv_sgnmag_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv_sgnmag_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.sim/sim_1/behav/xsim'
+"xelab -wto c1f0dba3cc3b4fb7a21d655159a26b87 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot conv_sgnmag_tb_behav xil_defaultlib.conv_sgnmag_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto c1f0dba3cc3b4fb7a21d655159a26b87 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot conv_sgnmag_tb_behav xil_defaultlib.conv_sgnmag_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3823] variable 'conv' might have multiple concurrent drivers [C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.srcs/sources_1/new/conv_sgnmag.sv:33]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.conv_sgnmag
+Compiling module xil_defaultlib.conv_sgnmag_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot conv_sgnmag_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+$stop called at time : 20 ns : File "C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.srcs/sim_1/new/conv_sgnmag_tb.sv" Line 43
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1102.207 ; gain = 0.344
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'conv_sgnmag_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj conv_sgnmag_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.srcs/sources_1/new/conv_sgnmag.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv_sgnmag
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.srcs/sim_1/new/conv_sgnmag_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv_sgnmag_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.sim/sim_1/behav/xsim'
+"xelab -wto c1f0dba3cc3b4fb7a21d655159a26b87 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot conv_sgnmag_tb_behav xil_defaultlib.conv_sgnmag_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto c1f0dba3cc3b4fb7a21d655159a26b87 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot conv_sgnmag_tb_behav xil_defaultlib.conv_sgnmag_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3823] variable 'conv' might have multiple concurrent drivers [C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.srcs/sources_1/new/conv_sgnmag.sv:33]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.conv_sgnmag
+Compiling module xil_defaultlib.conv_sgnmag_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot conv_sgnmag_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+$stop called at time : 20 ns : File "C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.srcs/sim_1/new/conv_sgnmag_tb.sv" Line 43
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1102.465 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'conv_sgnmag_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj conv_sgnmag_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.srcs/sources_1/new/conv_sgnmag.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv_sgnmag
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.srcs/sim_1/new/conv_sgnmag_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv_sgnmag_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.sim/sim_1/behav/xsim'
+"xelab -wto c1f0dba3cc3b4fb7a21d655159a26b87 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot conv_sgnmag_tb_behav xil_defaultlib.conv_sgnmag_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto c1f0dba3cc3b4fb7a21d655159a26b87 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot conv_sgnmag_tb_behav xil_defaultlib.conv_sgnmag_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3823] variable 'conv' might have multiple concurrent drivers [C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.srcs/sources_1/new/conv_sgnmag.sv:34]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.conv_sgnmag
+Compiling module xil_defaultlib.conv_sgnmag_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot conv_sgnmag_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+$stop called at time : 20 ns : File "C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.srcs/sim_1/new/conv_sgnmag_tb.sv" Line 43
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1102.465 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'conv_sgnmag_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj conv_sgnmag_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.srcs/sources_1/new/conv_sgnmag.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv_sgnmag
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.srcs/sim_1/new/conv_sgnmag_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv_sgnmag_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.sim/sim_1/behav/xsim'
+"xelab -wto c1f0dba3cc3b4fb7a21d655159a26b87 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot conv_sgnmag_tb_behav xil_defaultlib.conv_sgnmag_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto c1f0dba3cc3b4fb7a21d655159a26b87 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot conv_sgnmag_tb_behav xil_defaultlib.conv_sgnmag_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3823] variable 'conv' might have multiple concurrent drivers [C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.srcs/sources_1/new/conv_sgnmag.sv:34]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.conv_sgnmag
+Compiling module xil_defaultlib.conv_sgnmag_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot conv_sgnmag_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+$stop called at time : 20 ns : File "C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.srcs/sim_1/new/conv_sgnmag_tb.sv" Line 43
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1102.465 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'conv_sgnmag_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj conv_sgnmag_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.srcs/sources_1/new/conv_sgnmag.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv_sgnmag
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.srcs/sim_1/new/conv_sgnmag_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv_sgnmag_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.sim/sim_1/behav/xsim'
+"xelab -wto c1f0dba3cc3b4fb7a21d655159a26b87 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot conv_sgnmag_tb_behav xil_defaultlib.conv_sgnmag_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto c1f0dba3cc3b4fb7a21d655159a26b87 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot conv_sgnmag_tb_behav xil_defaultlib.conv_sgnmag_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3823] variable 'conv' might have multiple concurrent drivers [C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.srcs/sources_1/new/conv_sgnmag.sv:34]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.conv_sgnmag
+Compiling module xil_defaultlib.conv_sgnmag_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot conv_sgnmag_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+$stop called at time : 40 ns : File "C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.srcs/sim_1/new/conv_sgnmag_tb.sv" Line 48
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1105.480 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'conv_sgnmag_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj conv_sgnmag_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.srcs/sources_1/new/conv_sgnmag.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv_sgnmag
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.srcs/sim_1/new/conv_sgnmag_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv_sgnmag_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.sim/sim_1/behav/xsim'
+"xelab -wto c1f0dba3cc3b4fb7a21d655159a26b87 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot conv_sgnmag_tb_behav xil_defaultlib.conv_sgnmag_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto c1f0dba3cc3b4fb7a21d655159a26b87 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot conv_sgnmag_tb_behav xil_defaultlib.conv_sgnmag_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.conv_sgnmag
+Compiling module xil_defaultlib.conv_sgnmag_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot conv_sgnmag_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+$stop called at time : 40 ns : File "C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.srcs/sim_1/new/conv_sgnmag_tb.sv" Line 48
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1105.812 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'conv_sgnmag_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj conv_sgnmag_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.srcs/sources_1/new/conv_sgnmag.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv_sgnmag
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.srcs/sim_1/new/conv_sgnmag_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv_sgnmag_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.sim/sim_1/behav/xsim'
+"xelab -wto c1f0dba3cc3b4fb7a21d655159a26b87 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot conv_sgnmag_tb_behav xil_defaultlib.conv_sgnmag_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto c1f0dba3cc3b4fb7a21d655159a26b87 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot conv_sgnmag_tb_behav xil_defaultlib.conv_sgnmag_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.conv_sgnmag
+Compiling module xil_defaultlib.conv_sgnmag_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot conv_sgnmag_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+$stop called at time : 40 ns : File "C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.srcs/sim_1/new/conv_sgnmag_tb.sv" Line 48
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1106.141 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'conv_sgnmag_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj conv_sgnmag_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.sim/sim_1/behav/xsim'
+"xelab -wto c1f0dba3cc3b4fb7a21d655159a26b87 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot conv_sgnmag_tb_behav xil_defaultlib.conv_sgnmag_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto c1f0dba3cc3b4fb7a21d655159a26b87 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot conv_sgnmag_tb_behav xil_defaultlib.conv_sgnmag_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+$stop called at time : 40 ns : File "C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.srcs/sim_1/new/conv_sgnmag_tb.sv" Line 48
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.srcs/sim_1/new/round_tb.sv w ]
+add_files -fileset sim_1 C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.srcs/sim_1/new/round_tb.sv
+update_compile_order -fileset sim_1
+set_property top round_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'round_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj round_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.srcs/sources_1/new/round.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module round
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.srcs/sim_1/new/round_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module round_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.sim/sim_1/behav/xsim'
+"xelab -wto c1f0dba3cc3b4fb7a21d655159a26b87 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot round_tb_behav xil_defaultlib.round_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto c1f0dba3cc3b4fb7a21d655159a26b87 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot round_tb_behav xil_defaultlib.round_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.round
+Compiling module xil_defaultlib.round_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot round_tb_behav
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.sim/sim_1/behav/xsim/xsim.dir/round_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu Oct 12 13:55:34 2023...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "round_tb_behav -key {Behavioral:sim_1:Functional:round_tb} -tclbatch {round_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source round_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$stop called at time : 20 ns : File "C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.srcs/sim_1/new/round_tb.sv" Line 43
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'round_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1124.281 ; gain = 15.227
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'round_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj round_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.srcs/sources_1/new/round.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module round
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.srcs/sim_1/new/round_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module round_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.sim/sim_1/behav/xsim'
+"xelab -wto c1f0dba3cc3b4fb7a21d655159a26b87 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot round_tb_behav xil_defaultlib.round_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto c1f0dba3cc3b4fb7a21d655159a26b87 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot round_tb_behav xil_defaultlib.round_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.round
+Compiling module xil_defaultlib.round_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot round_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+$stop called at time : 20 ns : File "C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.srcs/sim_1/new/round_tb.sv" Line 43
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1125.633 ; gain = 0.668
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'round_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj round_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.sim/sim_1/behav/xsim'
+"xelab -wto c1f0dba3cc3b4fb7a21d655159a26b87 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot round_tb_behav xil_defaultlib.round_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto c1f0dba3cc3b4fb7a21d655159a26b87 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot round_tb_behav xil_defaultlib.round_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "round_tb_behav -key {Behavioral:sim_1:Functional:round_tb} -tclbatch {round_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source round_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$stop called at time : 20 ns : File "C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.srcs/sim_1/new/round_tb.sv" Line 43
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'round_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_runs synth_1 -jobs 6
+[Thu Oct 12 14:51:50 2023] Launched synth_1...
+Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Thu Oct 12 14:54:25 2023] Launched synth_1...
+Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.runs/synth_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+launch_runs synth_1 -jobs 6
+[Thu Oct 12 14:54:33 2023] Launched synth_1...
+Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Thu Oct 12 15:03:59 2023] Launched synth_1...
+Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Thu Oct 12 15:25:53 2023] Launched synth_1...
+Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Thu Oct 12 15:37:01 2023] Launched synth_1...
+Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 6
+[Thu Oct 12 15:37:38 2023] Launched impl_1...
+Run output will be captured here: C:/Users/choprak/ECE212_Chopra_Hill/Lab03/Lab03/Lab03.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1537.344 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 12 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 1620.570 ; gain = 0.137
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 1620.570 ; gain = 0.137
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2032.160 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+
+open_run: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 2169.684 ; gain = 918.223
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+close_design
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 12 17:00:22 2023...
