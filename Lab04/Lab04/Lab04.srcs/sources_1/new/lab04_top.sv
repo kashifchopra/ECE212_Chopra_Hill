@@ -23,21 +23,27 @@
 module lab04_top(
     input logic SW15, SW14, clk, rst, adv_min, adv_hr,
     output logic [7:0] an_n, //FIXME - put exact name of d7_in or whatever
-    output logic segs_n [6:0],
+    output logic [6:0] segs_n ,
     output logic dp_n,
     inout tmp_scl, // use inout only - no logic
-    inout tmp_sda // use inout only - no logic
+    inout tmp_sda, // use inout only - no logic
+    output logic selp, c_fp
     );
     
-    logic sel_wire;
+    logic sel_wire, clr,c_f;
     logic [6:0] d7_in,d6_in, d5_in,d4_in,d3_in,d2_in,d1_in,d0_in; //input wires going into d7 d6 etc
     logic [6:0] s0, s1, m0, m1, h0, h1, am_pm;
      
-    fsm FSM (.SW15, .SW14, .enb, .sel(sel_wire), .c_f); //FIXME - the ENB for the FSM
+    period_enb_2 #(.PERIOD_MS(2000))ENB(.clk, .rst, .clr, .enb_out(enb));
+     
+    fsm FSM (.clk, .SW15, .SW14, .enb(enb), .sel(sel_wire), .c_f, .rst); //CHECKME - the ENB for the FSM
     dig_clock DIG_CLOCK (.clk, .rst, .adv_min, .adv_hr, .s0(s0), .s1(s1), .m0(m0), .m1(m1), .h0(h0), .h1(h1), .am_pm(am_pm));
     tempTop TEMPTOP (.clk, .rst, .c_f, .tmp_scl, .tmp_sda, .d7_in(d7_in),. d6_in(d6_in), .d5_in(d5_in),. d4_in(d4_in), .d3_in(d3_in), .d2_in(d2_in), .d1_in(d1_in), .d0_in(d0_in));
     
     logic [6:0] d7_wire, d6_wire, d5_wire, d4_wire, d3_wire, d2_wire, d1_wire, d0_wire; //final wires going into the seven seg ctl 
+    
+    assign c_fp = c_f;
+    assign selp = sel_wire;
     
     always_comb begin
     

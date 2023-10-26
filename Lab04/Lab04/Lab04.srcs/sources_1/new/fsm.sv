@@ -21,7 +21,7 @@
 
 
 module fsm(
-    input logic SW15, SW14, enb,
+    input logic clk, SW15, SW14, enb, rst,
     output logic sel, c_f
     );
     
@@ -30,6 +30,12 @@ module fsm(
     } states_t;
 
     states_t state, next;
+    
+    always_ff @(posedge clk) 
+        if (rst) state <= DTIME;
+        else     state <= next; 
+         
+    
     
     always_comb begin
         
@@ -45,7 +51,8 @@ module fsm(
                 
                 if ((!SW15&&!SW14&&enb)|| !enb) next = DTIME;
                 else if((enb&&!SW15&&SW14) || (enb&&SW15&&SW14)) next = DF;
-                else next = DC; //Checkme - ive not coded the conditions since its just the last else statement
+                else if (enb) next = DC; //Checkme - ive not coded the conditions since its just the last else statement
+                else next = DTIME;
                 
             end
             
