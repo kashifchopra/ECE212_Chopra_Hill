@@ -70,7 +70,7 @@ EncodeLoops:
     add $0, $0, $0
     addi $sp, $sp, -8
     sw  $ra, 0($sp)
-    sw  $a0, 4($sp)
+    sw  $a0, 4($sp)          #the reason for storing these is cos encode chr also uses these registers so itll get overwritten otherwise 
     add $a0, $t8, $0
     jal encode_char #call char encode funtion
     add $0, $0, $0
