@@ -21,16 +21,18 @@ module controller(
     output logic       pcsrc, alusrc,
     output logic       regdst, regwrite,
     output logic       jump,
-    output logic [2:0] alucontrol
+    output logic [2:0] alucontrol,
+    output logic       branch, //pooped 
+    output logic [5:0] opcode1, funct1
     );
 
     logic [1:0] aluop;
     logic       branch;
 
     maindec U_MD(.opcode, .memtoreg, .memwrite, .branch,
-                 .alusrc, .regdst, .regwrite, .jump, .aluop);
+                 .alusrc, .regdst, .regwrite, .jump, .aluop, .opcode1);
 
-    aludec  U_AD(.funct, .aluop, .alucontrol);
+    aludec  U_AD(.funct, .aluop, .alucontrol, .funct1);
 
     assign pcsrc = branch & zero;
 

@@ -13,12 +13,17 @@ module mips(
     input  logic        clk, reset,
     output logic [31:0] pc,
     input logic [31:0]  instr,
-    output logic        memwrite,
+    output logic        memwrite, regwrite1, 
     output logic [31:0] aluout, writedata,
-    input logic [31:0]  readdata
+    input logic [31:0]  readdata, 
+    output logic        branch, zero, pcsrc1,   //pooped
+    output logic [31:0] instr1, readdata1, srca1, srcb1, result1,
+    output logic [5:0]  opcode1, funct1 // add fucnt after 
     );
 
     import mips_decls_p::*;
+
+    assign readdata1 = readdata; 
 
     // instruction fields
     // using enum types make symbolic values visible during simulation
@@ -26,6 +31,8 @@ module mips(
     funct_t funct;
     assign opcode = opcode_t'(instr[31:26]);
     assign funct = funct_t'(instr[5:0]); // caution: will show "phantom" function codes for
+    
+    assign instr1 = instr; 
     // non-R-Type instructions
 
     // status signals
@@ -39,10 +46,10 @@ module mips(
    controller U_C(.opcode, .funct, .zero,
                   .memtoreg, .memwrite, .pcsrc,
                   .alusrc, .regdst, .regwrite, .jump,
-                  .alucontrol);
+                  .alucontrol, .branch, .opcode1, .funct1);
 
    datapath U_DP(.clk, .reset, .memtoreg, .pcsrc,
                  .alusrc, .regdst, .regwrite, .jump,
-                 .alucontrol,.zero, .pc, .instr,
-                 .aluout, .writedata, .readdata);
+                 .alucontrol, .zero, .pc, .instr,
+                 .aluout, .writedata, .readdata, .pcsrc1, .srca1, .srcb1, .result1, .regwrite1);
 endmodule

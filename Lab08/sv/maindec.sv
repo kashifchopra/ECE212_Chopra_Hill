@@ -15,7 +15,8 @@
 module maindec (
 	input mips_decls_p::opcode_t opcode,
 	output logic memtoreg, memwrite, branch, alusrc, regdst, regwrite, jump,
-	output logic [1:0] aluop
+	output logic [1:0] aluop,
+	output logic [5:0] opcode1
 	);
 
 	import mips_decls_p::*;
@@ -95,4 +96,7 @@ module maindec (
 			end
 		endcase // case (opcode)
 	end
+	
+	assign opcode1 = opcode; // hbduhrvehevehv
+	
 endmodule // maindec

@@ -19,15 +19,17 @@ module datapath(
     input logic         memtoreg, pcsrc, alusrc,
     input logic         regdst, regwrite, jump,
     input logic [2:0]   alucontrol,
-    output logic        zero,
+    output logic        zero, pcsrc1, regwrite1,
     output logic [31:0] pc,
     input logic [31:0]  instr,
     output logic [31:0] aluout,
-    output logic [31:0] writedata,
+    output logic [31:0] writedata, srca1, srcb1, result1,
     input logic [31:0]  readdata
     );
 
     // instruction fields of interest in the datapath
+
+    assign pcsrc1 = pcsrc;
 
     logic [4:0]                      rs;
     logic [4:0]                      rt;
@@ -49,6 +51,8 @@ module datapath(
     logic [31:0]                     srca, srcb;
     logic [31:0]                     result;
     logic [31:0]                     pcjump;
+    
+    assign result1 = result; // found it 
 
     // next PC logic
 
@@ -80,5 +84,10 @@ module datapath(
 
     alu         U_ALU(.a(srca), .b(srcb), .f(alucontrol),
                       .y(aluout), .zero(zero));
+                      
+    assign srca1 = srca; 
+    assign srcb1 = srcb;  
+    assign regwrite1 =regwrite;        
+             
 
 endmodule

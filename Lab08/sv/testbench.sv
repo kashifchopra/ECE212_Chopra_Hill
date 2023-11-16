@@ -16,11 +16,12 @@ module testbench();
     logic        clk;
     logic        reset;
 
-    logic [31:0] writedata, dataadr;
-    logic        memwrite;
+    logic [31:0] writedata, dataadr, pc, instr1, readdata1, srca1, srcb1, result1;
+    logic        memwrite, branch, zero, pcsrc1, regwrite1;
+    logic [5:0] opcode1, funct1; 
 
     // instantiate device to be tested
-    top DUV(.clk, .reset, .writedata, .dataadr, .memwrite);
+    top DUV(.clk, .reset, .writedata, .dataadr, .memwrite, .branch, .pc, .instr1, .zero, .pcsrc1, .readdata1, .srca1, .srcb1, .opcode1, .funct1, .result1, .regwrite1);
 
     // initialize test
     initial

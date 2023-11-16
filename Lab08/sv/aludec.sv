@@ -12,7 +12,8 @@
 module aludec(
     mips_decls_p::funct_t funct,
     input  logic [1:0] aluop,
-    output logic [2:0] alucontrol
+    output logic [2:0] alucontrol,
+    output logic [5:0] funct1
     );
 
     import mips_decls_p::*;
@@ -33,4 +34,7 @@ module aludec(
         end
         default: alucontrol = 3'bxxx;
     endcase
+    
+    assign funct1 = funct; 
+    
 endmodule
