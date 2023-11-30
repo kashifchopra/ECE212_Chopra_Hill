@@ -39,12 +39,12 @@ module testbench();
     always@(negedge clk)
     begin
         if(memwrite) begin
-            if(dataadr === 84 & writedata === 7) begin
+            if(dataadr === 93 & writedata === -40955) begin
                 $display("Simulation succeeded");
                 @(posedge clk);
                 $stop;
-            end else if (dataadr !== 80) begin
-                $display("Simulation failed - expected to write m[84]=7, actual value %d",writedata);
+            end else if (dataadr !== 93) begin
+                $display("Simulation failed - expected to write m[93]=-4095, actual value %d",writedata);
                 @(posedge clk);
                 $stop;
             end

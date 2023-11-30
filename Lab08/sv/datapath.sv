@@ -16,7 +16,7 @@
 
 module datapath(
     input  logic        clk, reset,
-    input logic         memtoreg, pcsrc, alusrc,
+    input logic         memtoreg, pcsrc, alusrc, 
     input logic         regdst, regwrite, jump,
     input logic [2:0]   alucontrol,
     output logic        zero, pcsrc1, regwrite1,

@@ -1,0 +1,141 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Nov 21 14:34:29 2023
+# Process ID: 21252
+# Current directory: C:/Users/choprak/ECE212_Chopra_Hill/Lab08/Lab08
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11072 C:\Users\choprak\ECE212_Chopra_Hill\Lab08\Lab08\Lab08.xpr
+# Log file: C:/Users/choprak/ECE212_Chopra_Hill/Lab08/Lab08/vivado.log
+# Journal file: C:/Users/choprak/ECE212_Chopra_Hill/Lab08/Lab08\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/choprak/ECE212_Chopra_Hill/Lab08/Lab08/Lab08.xpr
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/choprak/ECE212_Chopra_Hill/Lab08/Lab08/Lab08.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1089.422 ; gain = 0.000
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/choprak/ECE212_Chopra_Hill/Lab08/Lab08/Lab08.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/choprak/ECE212_Chopra_Hill/Lab08/Lab08/Lab08.sim/sim_1/behav/xsim/memfile.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/choprak/ECE212_Chopra_Hill/Lab08/Lab08/Lab08.sim/sim_1/behav/xsim/memfile.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/choprak/ECE212_Chopra_Hill/Lab08/Lab08/Lab08.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/choprak/ECE212_Chopra_Hill/Lab08/sv/adder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/choprak/ECE212_Chopra_Hill/Lab08/sv/alu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/choprak/ECE212_Chopra_Hill/Lab08/sv/mips_decls_p.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/choprak/ECE212_Chopra_Hill/Lab08/sv/aludec.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aludec
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/choprak/ECE212_Chopra_Hill/Lab08/sv/controller.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'branch' is not allowed [C:/Users/choprak/ECE212_Chopra_Hill/Lab08/sv/controller.sv:30]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/choprak/ECE212_Chopra_Hill/Lab08/sv/datapath.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datapath
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/choprak/ECE212_Chopra_Hill/Lab08/sv/dmem.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dmem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/choprak/ECE212_Chopra_Hill/Lab08/sv/flopr.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flopr
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/choprak/ECE212_Chopra_Hill/Lab08/sv/imem.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/choprak/ECE212_Chopra_Hill/Lab08/sv/maindec.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module maindec
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/choprak/ECE212_Chopra_Hill/Lab08/sv/mips.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'zero' is not allowed [C:/Users/choprak/ECE212_Chopra_Hill/Lab08/sv/mips.sv:39]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/choprak/ECE212_Chopra_Hill/Lab08/sv/mux2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/choprak/ECE212_Chopra_Hill/Lab08/sv/regfile.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/choprak/ECE212_Chopra_Hill/Lab08/sv/signext.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module signext
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/choprak/ECE212_Chopra_Hill/Lab08/sv/sl2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sl2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/choprak/ECE212_Chopra_Hill/Lab08/sv/top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'pc' is not allowed [C:/Users/choprak/ECE212_Chopra_Hill/Lab08/sv/top.sv:19]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/choprak/ECE212_Chopra_Hill/Lab08/sv/testbench.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/choprak/ECE212_Chopra_Hill/Lab08/Lab08/Lab08.sim/sim_1/behav/xsim'
+"xelab -wto cd999434b27b494cb2743d03326e004c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto cd999434b27b494cb2743d03326e004c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "C:/Users/choprak/ECE212_Chopra_Hill/Lab08/Lab08/Lab08.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/choprak/ECE212_Chopra_Hill/Lab08/Lab08/Lab08.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.mips_decls_p
+Compiling module xil_defaultlib.maindec
+Compiling module xil_defaultlib.aludec
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.flopr(WIDTH=32)
+Compiling module xil_defaultlib.adder
+Compiling module xil_defaultlib.sl2
+Compiling module xil_defaultlib.mux2(WIDTH=32)
+Compiling module xil_defaultlib.mux2(WIDTH=5)
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.signext
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.datapath
+Compiling module xil_defaultlib.mips
+Compiling module xil_defaultlib.imem
+Compiling module xil_defaultlib.dmem
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_behav
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/choprak/ECE212_Chopra_Hill/Lab08/Lab08/Lab08.sim/sim_1/behav/xsim/xsim.dir/testbench_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Tue Nov 21 14:36:20 2023...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/choprak/ECE212_Chopra_Hill/Lab08/Lab08/Lab08.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_behav -key {Behavioral:sim_1:Functional:testbench} -tclbatch {testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Simulation succeeded
+$stop called at time : 170 ns : File "C:/Users/choprak/ECE212_Chopra_Hill/Lab08/sv/testbench.sv" Line 45
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 1089.422 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 21 15:09:42 2023...
