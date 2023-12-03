@@ -25,7 +25,7 @@ module imem #(parameter SIZE=64 ) (
 
    initial
      begin
-        $readmemh("memfile_nops.dat",RAM); // initialize memory
+        $readmemh("memfile.dat",RAM); // initialize memory //changed "memfile_nops.dat to memfile.dat
      end
 
    always_comb

@@ -14,10 +14,16 @@ module mips(input  logic        clk, reset,
             input logic [31:0]  instr,
             output logic        memwrite,
             output logic [31:0] aluout, writedata,
+           // output logic [5:0] opcode_d, //pooped
+           
+         //   output logic memtoreg_d, alusrc_d, regdst_d, regwrite_d, jump_d, pcsrc_d, //pooped // memwrite_d
+           // output logic [2:0] alucontrol_d, //pooped
             input logic [31:0]  readdata);
 
    import mips_decls_p::*;
 
+  // logic [5:0] opcode_d; //pooped 
+   
    // local properly named control signal
    logic memwrite_d, memwrite_m;
    assign memwrite = memwrite_m;  // for external connection
