@@ -19,5 +19,24 @@ module aludec(
   // module.
 
   // Remember that you may also reuse any code from previous labs.
+  
+  
+ always_comb
+    case(aluop)
+        2'b00: alucontrol = 3'b010;  // add
+        2'b01: alucontrol = 3'b110;  // sub
+        2'b10: begin
+            case(funct)          // RTYPE
+                F_ADD:   alucontrol = 3'b010; // ADD
+                F_SUB:   alucontrol = 3'b110; // SUB
+                F_AND:   alucontrol = 3'b000; // AND
+                F_OR:    alucontrol = 3'b001; // OR
+                F_SLT:   alucontrol = 3'b111; // SLT
+                default: alucontrol = 3'bxxx; // unimplemented/unknown
+            endcase // case (funct)
+        end
+        default: alucontrol = 3'bxxx;
+    endcase
+  
 
 endmodule // aludec

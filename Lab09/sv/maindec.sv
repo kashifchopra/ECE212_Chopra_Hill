@@ -64,25 +64,55 @@ module maindec(
               endcase
           end
       // Add code here
-      MEMADR:
-      MEMRD:
-      MEMWB:
-      MEMWR:
-      RTYPEEX:
-      RTYPEWB:
-      BEQEX:
-      ADDIEX:
-      ADDIWB:
-      JEX:
+          MEMADR: begin
+              case(opcode)
+                  OP_LW: next = MEMRD;
+                  OP_SW: next = MEMWR;
+                  default:   next = ERROR;
+              endcase 
+          end
+     
+      MEMRD: begin
+             next = MEMWB; 
+      end
+     
+      MEMWB: begin 
+            next = FETCH;
+      end
+       
+      MEMWR: begin
+            next = FETCH;
+      end
+      
+      RTYPEEX: begin
+            next = RTYPEWB;
+      end
+      RTYPEWB: begin
+            next = FETCH;
+      end
+      BEQEX:begin
+            next = FETCH;
+      end
+      ADDIEX:begin
+            next = ADDIWB;
+      end
+      ADDIWB: begin
+            next = FETCH;
+      end
+      JEX: begin
+            next = FETCH;
+      end
       ERROR:   next = ERROR;  // stay in ERROR state until reset
       default: next = ERROR;  // should never happen but go to ERROR if it does
   endcase
 
+end
   // output logic
 
   // ADD CODE HERE
   // Finish entering the output logic below.  We've entered the
   // output logic for the first two states, FETCH(S0) and DECODE(S1), for you.
+ 
   always_comb begin
       // default output values
       pcwrite = 0;
@@ -117,9 +147,76 @@ module maindec(
           // note you only need to add values specified in each state bubble
           // because default values are set before the case statement
 
+          MEMADR: begin
+              alusrca = 1;
+              alusrcb = 2'b10;
+              aluop = 2'b00;
+          end
+          
+          MEMRD: begin
+             iord = 1'b1;
+          end
+           
+           MEMWB:
+        begin
+            regdst = 1'b0;
+            memtoreg = 1'b1;
+            regwrite = 1'b1;
+        end
+        MEMWR:
+        begin
+            iord = 1'b1;
+            memwrite = 1'b1;
+        end
+        RTYPEEX:
+        begin
+            alusrca = 1'b1;
+            alusrcb = 2'b00;
+            aluop = 2'b10;
+        end
+        RTYPEWB:
+        begin
+            regdst = 1'b1;
+            memtoreg = 1'b0;
+            regwrite = 1'b1;
+        end
+        BEQEX:
+        begin
+            alusrca = 1'b1;
+            alusrcb = 2'b00;
+            aluop = 2'b01;
+            pcsrc = 2'b01;
+            branch = 1'b1;
+        end
+        ADDIEX:
+        begin
+            alusrca = 1'b1;
+            alusrcb = 2'b10;
+            aluop = 2'b00;
+        end
+        ADDIWB:
+        begin
+            regdst = 1'b0;
+            memtoreg = 1'b0;
+            regwrite = 1'b1;
+       end     
+       JEX:
+        begin
+           pcsrc = 2'b10;
+           pcwrite = 1'b1; 
+        end   
+        
+        
+           
+
           // just use default values set before case
+          
+          default: ;
+          ERROR:;
 
       endcase // case (state)
   end
+  
+
 
 endmodule

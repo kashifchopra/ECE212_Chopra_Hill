@@ -10,7 +10,7 @@ module controller(
     );
 
     logic [1:0] aluop;
-    logic       branch, pcwrite;
+    logic       branch, pcwrite, zero;
 
   // Main Decoder and ALU Decoder subunits.
   maindec U_MAINDEC(.clk, .reset, .opcode,
@@ -24,6 +24,9 @@ module controller(
   // Add combinational logic (e.g. an assign statement)
   // to produce the PCEn signal (pcen) from the branch,
   // zero, and pcwrite signals
+
+assign pcen = (branch & zero) | pcwrite;
+
 
 
 endmodule
