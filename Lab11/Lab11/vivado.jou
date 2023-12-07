@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Dec  7 16:42:51 2023
+# Process ID: 29340
+# Current directory: C:/Users/choprak/ECE212_Chopra_Hill/Lab11/Lab11
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent26500 C:\Users\choprak\ECE212_Chopra_Hill\Lab11\Lab11\Lab11.xpr
+# Log file: C:/Users/choprak/ECE212_Chopra_Hill/Lab11/Lab11/vivado.log
+# Journal file: C:/Users/choprak/ECE212_Chopra_Hill/Lab11/Lab11\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/choprak/ECE212_Chopra_Hill/Lab11/Lab11/Lab11.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source testbench.tcl
+relaunch_sim
+save_wave_config {C:/Users/choprak/ECE212_Chopra_Hill/Lab11/Lab11/testbench_behav.wcfg}
+add_files -fileset sim_1 -norecurse C:/Users/choprak/ECE212_Chopra_Hill/Lab11/Lab11/testbench_behav.wcfg
+set_property xsim.view C:/Users/choprak/ECE212_Chopra_Hill/Lab11/Lab11/testbench_behav.wcfg [get_filesets sim_1]
+close_sim
+launch_simulation
+open_wave_config C:/Users/choprak/ECE212_Chopra_Hill/Lab11/Lab11/testbench_behav.wcfg
+source testbench.tcl
+current_wave_config {}
+add_wave {{/testbench/DUV/mips/U_DP/instr_f}} 
+current_wave_config {testbench_behav.wcfg}
+add_wave {{/testbench/DUV/mips/U_DP/instr_d}} 
+restart
+run all
