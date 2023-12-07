@@ -1,5 +1,6 @@
 # compile verilog/system verilog design source files
 sv xil_defaultlib  \
+"../../../../Lab09.srcs/sources_1/new/mips_decls_p.sv" \
 "../../../../../sv/mips_decls_p.sv" \
 "../../../../../sv/aludec.sv" \
 "../../../../../sv/controller.sv" \

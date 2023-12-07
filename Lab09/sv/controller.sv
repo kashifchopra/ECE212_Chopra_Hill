@@ -4,7 +4,8 @@ module controller(
     input mips_decls_p::funct_t funct,
     input  logic       zero,
     output logic       pcen, memwrite, irwrite, regwrite,
-    output logic       alusrca, iord, memtoreg, regdst,
+    output logic       alusrca, iord, memtoreg, regdst, 
+    output logic pcwrite, //pcwrite popped out
     output logic [1:0] alusrcb, pcsrc,
     output logic [2:0] alucontrol
     );

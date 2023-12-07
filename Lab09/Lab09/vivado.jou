@@ -1,0 +1,55 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Dec  7 14:20:24 2023
+# Process ID: 19160
+# Current directory: C:/Users/choprak/ECE212_Chopra_Hill/Lab09/Lab09
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13572 C:\Users\choprak\ECE212_Chopra_Hill\Lab09\Lab09\Lab09.xpr
+# Log file: C:/Users/choprak/ECE212_Chopra_Hill/Lab09/Lab09/vivado.log
+# Journal file: C:/Users/choprak/ECE212_Chopra_Hill/Lab09/Lab09\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/choprak/ECE212_Chopra_Hill/Lab09/Lab09/Lab09.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+add_files -norecurse C:/Users/choprak/ECE212_Chopra_Hill/Lab09/sv/mips_decls_p.sv
+add_files -norecurse C:/Users/choprak/ECE212_Chopra_Hill/Lab09/sv/mips_decls_p.sv
+file mkdir C:/Users/choprak/ECE212_Chopra_Hill/Lab09/Lab09/Lab09.srcs/sources_1/new
+close [ open C:/Users/choprak/ECE212_Chopra_Hill/Lab09/Lab09/Lab09.srcs/sources_1/new/mips_decls_p.sv w ]
+add_files C:/Users/choprak/ECE212_Chopra_Hill/Lab09/Lab09/Lab09.srcs/sources_1/new/mips_decls_p.sv
+update_compile_order -fileset sources_1
+launch_simulation
+source controller_tb.tcl
+close_sim
+launch_simulation
+source controller_tb.tcl
+close_sim
+launch_simulation
+source controller_tb.tcl
+close_sim
+launch_simulation
+source controller_tb.tcl
+close_sim
+launch_simulation
+source controller_tb.tcl
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+save_wave_config {C:/Users/choprak/ECE212_Chopra_Hill/Lab09/Lab09/controller_tb_behav.wcfg}
+save_wave_config {C:/Users/choprak/ECE212_Chopra_Hill/Lab09/Lab09/controller_tb_behav.wcfg}
+save_wave_config {C:/Users/choprak/ECE212_Chopra_Hill/Lab09/Lab09/controller_tb_behav.wcfg}
+save_wave_config {C:/Users/choprak/ECE212_Chopra_Hill/Lab09/Lab09/controller_tb_behav.wcfg}
+save_wave_config {C:/Users/choprak/ECE212_Chopra_Hill/Lab09/Lab09/controller_tb_behav.wcfg}
+save_wave_config {C:/Users/choprak/ECE212_Chopra_Hill/Lab09/Lab09/controller_tb_behav.wcfg}
+save_wave_config {C:/Users/choprak/ECE212_Chopra_Hill/Lab09/Lab09/controller_tb_behav.wcfg}
+save_wave_config {C:/Users/choprak/ECE212_Chopra_Hill/Lab09/Lab09/controller_tb_behav.wcfg}
+save_wave_config {C:/Users/choprak/ECE212_Chopra_Hill/Lab09/Lab09/controller_tb_behav.wcfg}
+close_sim

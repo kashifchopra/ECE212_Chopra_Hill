@@ -4,6 +4,18 @@ Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 22dc135838
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-3091] actual bit length 7 differs from formal bit length 6 for port 'opcode' [C:/Users/choprak/ECE212_Chopra_Hill/Lab09/Lab09/Lab09.srcs/sim_1/new/controller_tb.sv:34]
-ERROR: [VRFC 10-2649] an enum variable may only be assigned the same enum typed variable or one of its values [C:/Users/choprak/ECE212_Chopra_Hill/Lab09/Lab09/Lab09.srcs/sim_1/new/controller_tb.sv:34]
-ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "C:/Users/choprak/ECE212_Chopra_Hill/Lab09/Lab09/Lab09.srcs/sim_1/new/controller_tb.sv" Line 23. Module controller_tb has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/choprak/ECE212_Chopra_Hill/Lab09/Lab09/Lab09.srcs/sim_1/new/controller_tb.sv" Line 23. Module controller_tb has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/choprak/ECE212_Chopra_Hill/Lab09/Lab09/Lab09.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/choprak/ECE212_Chopra_Hill/Lab09/Lab09/Lab09.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.mips_decls_p
+Compiling module xil_defaultlib.maindec
+Compiling module xil_defaultlib.aludec
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.controller_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot controller_tb_behav
