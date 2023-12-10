@@ -26,6 +26,7 @@ Compiling module xil_defaultlib.alu
 Compiling module xil_defaultlib.mux2(WIDTH=5)
 Compiling module xil_defaultlib.pr_e_m
 Compiling module xil_defaultlib.pr_m_w
+Compiling module xil_defaultlib.mux3(WIDTH=32)
 Compiling module xil_defaultlib.datapath
 Compiling module xil_defaultlib.mips
 Compiling module xil_defaultlib.imem

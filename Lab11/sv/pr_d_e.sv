@@ -1,14 +1,16 @@
 module pr_d_e(input logic clk, reset, flush_e,
-  input logic regwrite_d, memtoreg_d, memwrite_d,
+  input logic regwrite_d, memwrite_d,
+  input logic [1:0] memtoreg_d,
   input logic [2:0] alucontrol_d,
   input logic alusrc_d, regdst_d,
-  input logic [31:0] rd1_d, rd2_d,
+  input logic [31:0] rd1_d, rd2_d, pcplus4_d,
   input logic [4:0] rs_d, rt_d, rd_d,
   input logic [31:0] signimm_d,
-  output logic regwrite_e, memtoreg_e, memwrite_e,
+  output logic regwrite_e, memwrite_e,
+  output logic [1:0] memtoreg_e,
   output logic [2:0] alucontrol_e,
   output logic alusrc_e, regdst_e,
-  output logic [31:0] rd1_e, rd2_e,
+  output logic [31:0] rd1_e, rd2_e, pcplus4_e,
   output logic [4:0] rs_e, rt_e, rd_e,
   output logic [31:0] signimm_e
   );
@@ -41,5 +43,6 @@ module pr_d_e(input logic clk, reset, flush_e,
     rt_e <= rt_d;
     rd_e <= rd_d;
     signimm_e <= signimm_d;
+    pcplus4_e <= pcplus4_d;
   end
 endmodule: pr_d_e

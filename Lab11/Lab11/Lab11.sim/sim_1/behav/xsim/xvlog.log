@@ -17,8 +17,11 @@ INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/choprak/ECE212_Chopr
 INFO: [VRFC 10-311] analyzing module maindec
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/choprak/ECE212_Chopra_Hill/Lab11/sv/mips.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module mips
+INFO: [VRFC 10-2458] undeclared symbol jump_r_d, assumed default net type wire [C:/Users/choprak/ECE212_Chopra_Hill/Lab11/sv/mips.sv:53]
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/choprak/ECE212_Chopra_Hill/Lab11/sv/mux2.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/choprak/ECE212_Chopra_Hill/Lab11/sv/mux3.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux3
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/choprak/ECE212_Chopra_Hill/Lab11/sv/pr_d_e.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module pr_d_e
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/choprak/ECE212_Chopra_Hill/Lab11/sv/pr_e_m.sv" into library xil_defaultlib

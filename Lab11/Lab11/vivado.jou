@@ -2,10 +2,10 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Thu Dec  7 16:42:51 2023
-# Process ID: 29340
+# Start of session at: Sat Dec  9 17:19:04 2023
+# Process ID: 22716
 # Current directory: C:/Users/choprak/ECE212_Chopra_Hill/Lab11/Lab11
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent26500 C:\Users\choprak\ECE212_Chopra_Hill\Lab11\Lab11\Lab11.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18400 C:\Users\choprak\ECE212_Chopra_Hill\Lab11\Lab11\Lab11.xpr
 # Log file: C:/Users/choprak/ECE212_Chopra_Hill/Lab11/Lab11/vivado.log
 # Journal file: C:/Users/choprak/ECE212_Chopra_Hill/Lab11/Lab11\vivado.jou
 #-----------------------------------------------------------
@@ -13,18 +13,58 @@ start_gui
 open_project C:/Users/choprak/ECE212_Chopra_Hill/Lab11/Lab11/Lab11.xpr
 update_compile_order -fileset sources_1
 launch_simulation
+open_wave_config C:/Users/choprak/ECE212_Chopra_Hill/Lab11/Lab11/testbench_behav.wcfg
 source testbench.tcl
-relaunch_sim
+update_compile_order -fileset sources_1
+add_files -norecurse C:/Users/choprak/ECE212_Chopra_Hill/Lab11/doc/jal_jr_test.dat
 save_wave_config {C:/Users/choprak/ECE212_Chopra_Hill/Lab11/Lab11/testbench_behav.wcfg}
-add_files -fileset sim_1 -norecurse C:/Users/choprak/ECE212_Chopra_Hill/Lab11/Lab11/testbench_behav.wcfg
-set_property xsim.view C:/Users/choprak/ECE212_Chopra_Hill/Lab11/Lab11/testbench_behav.wcfg [get_filesets sim_1]
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+open_wave_config C:/Users/choprak/ECE212_Chopra_Hill/Lab11/Lab11/testbench_behav.wcfg
+source testbench.tcl
+save_wave_config {C:/Users/choprak/ECE212_Chopra_Hill/Lab11/Lab11/testbench_behav.wcfg}
 close_sim
 launch_simulation
 open_wave_config C:/Users/choprak/ECE212_Chopra_Hill/Lab11/Lab11/testbench_behav.wcfg
 source testbench.tcl
-current_wave_config {}
-add_wave {{/testbench/DUV/mips/U_DP/instr_f}} 
-current_wave_config {testbench_behav.wcfg}
-add_wave {{/testbench/DUV/mips/U_DP/instr_d}} 
-restart
-run all
+create_project Lab11v2 C:/Users/choprak/ECE212_Chopra_Hill/Lab11v2 -part xc7a100tcsg324-1
+set_property board_part digilentinc.com:nexys-a7-100t:part0:1.0 [current_project]
+add_files -norecurse {C:/Users/choprak/Desktop/ece212_angela_laxman-main/Lab11/jal_jr_test.dat C:/Users/choprak/Desktop/ece212_angela_laxman-main/Lab11/sv/memfile.dat C:/Users/choprak/Desktop/ece212_angela_laxman-main/Lab11/src/jal_jr_test.s C:/Users/choprak/Desktop/ece212_angela_laxman-main/Lab11/src/memfile.asm}
+add_files -norecurse {C:/Users/choprak/Desktop/ece212_angela_laxman-main/Lab11/sv/regfile.sv C:/Users/choprak/Desktop/ece212_angela_laxman-main/Lab11/sv/adder.sv C:/Users/choprak/Desktop/ece212_angela_laxman-main/Lab11/sv/datapath.sv C:/Users/choprak/Desktop/ece212_angela_laxman-main/Lab11/sv/pr_m_w.sv C:/Users/choprak/Desktop/ece212_angela_laxman-main/Lab11/sv/controller.sv C:/Users/choprak/Desktop/ece212_angela_laxman-main/Lab11/sv/flopr.sv C:/Users/choprak/Desktop/ece212_angela_laxman-main/Lab11/sv/mux3.sv C:/Users/choprak/Desktop/ece212_angela_laxman-main/Lab11/sv/sl2.sv C:/Users/choprak/Desktop/ece212_angela_laxman-main/Lab11/sv/alu.sv C:/Users/choprak/Desktop/ece212_angela_laxman-main/Lab11/sv/pr_f_d.sv C:/Users/choprak/Desktop/ece212_angela_laxman-main/Lab11/sv/pr_e_m.sv C:/Users/choprak/Desktop/ece212_angela_laxman-main/Lab11/sv/flopenr.sv C:/Users/choprak/Desktop/ece212_angela_laxman-main/Lab11/sv/signext.sv C:/Users/choprak/Desktop/ece212_angela_laxman-main/Lab11/sv/mipsbench.sv C:/Users/choprak/Desktop/ece212_angela_laxman-main/Lab11/sv/mips.sv C:/Users/choprak/Desktop/ece212_angela_laxman-main/Lab11/sv/pr_pc.sv C:/Users/choprak/Desktop/ece212_angela_laxman-main/Lab11/sv/aludec.sv C:/Users/choprak/Desktop/ece212_angela_laxman-main/Lab11/sv/pr_d_e.sv C:/Users/choprak/Desktop/ece212_angela_laxman-main/Lab11/sv/dmem.sv C:/Users/choprak/Desktop/ece212_angela_laxman-main/Lab11/sv/mux2.sv C:/Users/choprak/Desktop/ece212_angela_laxman-main/Lab11/sv/mips_decls_p.sv C:/Users/choprak/Desktop/ece212_angela_laxman-main/Lab11/sv/top.sv C:/Users/choprak/Desktop/ece212_angela_laxman-main/Lab11/sv/imem.sv C:/Users/choprak/Desktop/ece212_angela_laxman-main/Lab11/sv/maindec.sv C:/Users/choprak/Desktop/ece212_angela_laxman-main/Lab11/sv/testbench.sv}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top top [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+launch_simulation
+source testbench.tcl
+current_project Lab11
+launch_simulation
+open_wave_config C:/Users/choprak/ECE212_Chopra_Hill/Lab11/Lab11/testbench_behav.wcfg
+source testbench.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/choprak/ECE212_Chopra_Hill/Lab11/Lab11/testbench_behav.wcfg
+source testbench.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/choprak/ECE212_Chopra_Hill/Lab11/Lab11/testbench_behav.wcfg
+source testbench.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/choprak/ECE212_Chopra_Hill/Lab11/Lab11/testbench_behav.wcfg
+source testbench.tcl
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+open_wave_config C:/Users/choprak/ECE212_Chopra_Hill/Lab11/Lab11/testbench_behav.wcfg
+source testbench.tcl
+current_project Lab11v2
+close_project
+close_sim

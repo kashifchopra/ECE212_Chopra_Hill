@@ -12,15 +12,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="2680fs"></ZoomStartTime>
-      <ZoomEndTime time="150128fs"></ZoomEndTime>
-      <Cursor1Time time="0fs"></Cursor1Time>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="62128fs"></ZoomEndTime>
+      <Cursor1Time time="47119fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="154"></NameColumnWidth>
-      <ValueColumnWidth column_width="74"></ValueColumnWidth>
+      <ValueColumnWidth column_width="62"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="26" />
+   <WVObjectSize size="46" />
    <wvobject fp_name="/testbench/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -28,6 +28,16 @@
    <wvobject fp_name="/testbench/reset" type="logic">
       <obj_property name="ElementShortName">reset</obj_property>
       <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/DUV/mips/U_DP/U_PC_F/pc_f" type="array">
+      <obj_property name="ElementShortName">pc_f[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_f[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/DUV/mips/U_DP/U_PC_F/pcnext_f" type="array">
+      <obj_property name="ElementShortName">pcnext_f[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pcnext_f[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/testbench/writedata" type="array">
       <obj_property name="ElementShortName">writedata[31:0]</obj_property>
@@ -39,11 +49,6 @@
       <obj_property name="ObjectShortName">dataadr[31:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
    </wvobject>
-   <wvobject fp_name="/testbench/pc" type="array">
-      <obj_property name="ElementShortName">pc[31:0]</obj_property>
-      <obj_property name="ObjectShortName">pc[31:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-   </wvobject>
    <wvobject fp_name="/testbench/memwrite" type="logic">
       <obj_property name="ElementShortName">memwrite</obj_property>
       <obj_property name="ObjectShortName">memwrite</obj_property>
@@ -53,14 +58,98 @@
       <obj_property name="ObjectShortName">cycle[31:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
    </wvobject>
-   <wvobject fp_name="/testbench/LIMIT" type="array">
-      <obj_property name="ElementShortName">LIMIT[31:0]</obj_property>
-      <obj_property name="ObjectShortName">LIMIT[31:0]</obj_property>
+   <wvobject fp_name="/testbench/DUV/mips/U_C/aluop" type="array">
+      <obj_property name="ElementShortName">aluop[1:0]</obj_property>
+      <obj_property name="ObjectShortName">aluop[1:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/testbench/DUV/mips/opcode_d" type="array">
       <obj_property name="ElementShortName">opcode_d[5:0]</obj_property>
       <obj_property name="ObjectShortName">opcode_d[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/DUV/mips/U_C/memtoreg" type="array">
+      <obj_property name="ElementShortName">memtoreg[1:0]</obj_property>
+      <obj_property name="ObjectShortName">memtoreg[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/DUV/mips/U_C/memwrite" type="logic">
+      <obj_property name="ElementShortName">memwrite</obj_property>
+      <obj_property name="ObjectShortName">memwrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/DUV/mips/U_C/branch" type="logic">
+      <obj_property name="ElementShortName">branch</obj_property>
+      <obj_property name="ObjectShortName">branch</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/DUV/mips/U_C/alusrc" type="logic">
+      <obj_property name="ElementShortName">alusrc</obj_property>
+      <obj_property name="ObjectShortName">alusrc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/DUV/mips/U_C/regdst" type="logic">
+      <obj_property name="ElementShortName">regdst</obj_property>
+      <obj_property name="ObjectShortName">regdst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/DUV/mips/U_C/regwrite" type="logic">
+      <obj_property name="ElementShortName">regwrite</obj_property>
+      <obj_property name="ObjectShortName">regwrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/DUV/mips/U_C/jump" type="logic">
+      <obj_property name="ElementShortName">jump</obj_property>
+      <obj_property name="ObjectShortName">jump</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/DUV/mips/U_C/pcsrc" type="logic">
+      <obj_property name="ElementShortName">pcsrc</obj_property>
+      <obj_property name="ObjectShortName">pcsrc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/DUV/mips/funct_d" type="array">
+      <obj_property name="ElementShortName">funct_d[5:0]</obj_property>
+      <obj_property name="ObjectShortName">funct_d[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/DUV/mips/U_C/alucontrol" type="array">
+      <obj_property name="ElementShortName">alucontrol[2:0]</obj_property>
+      <obj_property name="ObjectShortName">alucontrol[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/DUV/imem/adr" type="array">
+      <obj_property name="ElementShortName">adr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">adr[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/DUV/imem/rd" type="array">
+      <obj_property name="ElementShortName">rd[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rd[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/DUV/imem/adr_w" type="array">
+      <obj_property name="ElementShortName">adr_w[29:0]</obj_property>
+      <obj_property name="ObjectShortName">adr_w[29:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/DUV/dmem/wd" type="array">
+      <obj_property name="ElementShortName">wd[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wd[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/DUV/mips/readdata" type="array">
+      <obj_property name="ElementShortName">readdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">readdata[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/DUV/dmem/adr_w" type="array">
+      <obj_property name="ElementShortName">adr_w[29:0]</obj_property>
+      <obj_property name="ObjectShortName">adr_w[29:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/DUV/mips/U_DP/regwrite_e" type="logic">
+      <obj_property name="ElementShortName">regwrite_e</obj_property>
+      <obj_property name="ObjectShortName">regwrite_e</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/pc" type="array">
+      <obj_property name="ElementShortName">pc[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/LIMIT" type="array">
+      <obj_property name="ElementShortName">LIMIT[31:0]</obj_property>
+      <obj_property name="ObjectShortName">LIMIT[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/testbench/DUV/mips/memwrite" type="logic">
       <obj_property name="ElementShortName">memwrite</obj_property>
@@ -71,25 +160,17 @@
       <obj_property name="ObjectShortName">aluout[31:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
    </wvobject>
-   <wvobject fp_name="/testbench/DUV/mips/readdata" type="array">
-      <obj_property name="ElementShortName">readdata[31:0]</obj_property>
-      <obj_property name="ObjectShortName">readdata[31:0]</obj_property>
-   </wvobject>
    <wvobject fp_name="/testbench/DUV/mips/memwrite_m" type="logic">
       <obj_property name="ElementShortName">memwrite_m</obj_property>
       <obj_property name="ObjectShortName">memwrite_m</obj_property>
-   </wvobject>
-   <wvobject fp_name="/testbench/DUV/mips/funct_d" type="array">
-      <obj_property name="ElementShortName">funct_d[5:0]</obj_property>
-      <obj_property name="ObjectShortName">funct_d[5:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/testbench/DUV/mips/zero_d" type="logic">
       <obj_property name="ElementShortName">zero_d</obj_property>
       <obj_property name="ObjectShortName">zero_d</obj_property>
    </wvobject>
-   <wvobject fp_name="/testbench/DUV/mips/memtoreg_d" type="logic">
-      <obj_property name="ElementShortName">memtoreg_d</obj_property>
-      <obj_property name="ObjectShortName">memtoreg_d</obj_property>
+   <wvobject fp_name="/testbench/DUV/mips/memtoreg_d" type="array">
+      <obj_property name="ElementShortName">memtoreg_d[1:0]</obj_property>
+      <obj_property name="ObjectShortName">memtoreg_d[1:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/testbench/DUV/mips/alusrc_d" type="logic">
       <obj_property name="ElementShortName">alusrc_d</obj_property>
@@ -127,8 +208,19 @@
       <obj_property name="ElementShortName">regdst_e</obj_property>
       <obj_property name="ObjectShortName">regdst_e</obj_property>
    </wvobject>
-   <wvobject fp_name="/testbench/DUV/mips/U_DP/regwrite_e" type="logic">
-      <obj_property name="ElementShortName">regwrite_e</obj_property>
-      <obj_property name="ObjectShortName">regwrite_e</obj_property>
+   <wvobject fp_name="/testbench/DUV/mips/U_DP/instr_f" type="array">
+      <obj_property name="ElementShortName">instr_f[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instr_f[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/DUV/mips/U_DP/instr_d" type="array">
+      <obj_property name="ElementShortName">instr_d[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instr_d[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/DUV/mips/U_DP/pcnext_f" type="array">
+      <obj_property name="ElementShortName">pcnext_f[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pcnext_f[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
    </wvobject>
 </wave_config>

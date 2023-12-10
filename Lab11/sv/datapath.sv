@@ -10,8 +10,9 @@
 //--------------------------------------------------------------
 
 module datapath(input  logic        clk, reset,
-  input logic         memtoreg_d, memwrite_d, pcsrc_d, alusrc_d,
-  input logic         regdst_d, regwrite_d, jump_d,
+  input logic         memwrite_d, pcsrc_d, alusrc_d,
+  input logic [1:0]   memtoreg_d,
+  input logic         regdst_d, regwrite_d, jump_d, jump_r_d,
   input logic [2:0]   alucontrol_d,
   output logic        zero_d,
   output logic [31:0] pc_f,
@@ -28,7 +29,7 @@ module datapath(input  logic        clk, reset,
   //--------------------------------------------------------------
   //   IF Declarations
 
-  logic [31:0]                     pcplus4_f, pcnextbr_f, pcnext_f;
+  logic [31:0]                     pcplus4_f, pcnextbr_f, pcnext_f,pcnext_j;
   // instr_f already declared as an input port
 
   //   ID Declarataions (not control signals are module inputs)
@@ -38,15 +39,17 @@ module datapath(input  logic        clk, reset,
   logic [4:0]                      rd_d;
   logic [15:0]                     immed_d;  // i-type immediate field
   logic [25:0]                     jpadr_d;  // j-type pseudo-address
-  logic [31:0]                     pcnextbr_d, pcplus4_d, pcbranch_d;
+  logic [31:0]                     pcnextbr_d, pcplus4_d, pcplus4_e, pcplus4_m, pcplus4_w, pcbranch_d;
   logic [31:0]                     rd1_d, rd2_d;
   logic [31:0]                     signimm_d, signimmsh_d;
   logic [31:0]                     pcjump_d;
+  
 
   // EX Declarataions
 
-  logic         memtoreg_e, memwrite_e, alusrc_e;
+  logic         memwrite_e, alusrc_e;
   logic         regdst_e, regwrite_e;
+  logic [1:0]   memtoreg_e;
   logic [2:0]   alucontrol_e;
 
   logic [4:0]                      rs_e;
@@ -62,13 +65,15 @@ module datapath(input  logic        clk, reset,
 
   // MEM Declarataions
 
-  logic                            memtoreg_m, regwrite_m;
-  logic [4:0]                      writereg_m;  // WB Declarations
+  logic                             regwrite_m;
+  logic [1:0]                       memtoreg_m;
+  logic [4:0]                       writereg_m;  // WB Declarations
 
   // WB Declarataions
 
-  logic                            regwrite_w, memtoreg_w;
-  logic [4:0]                      writereg_w;
+  logic                            regwrite_w;
+  logic [1:0]                      memtoreg_w;
+  logic [4:0]                      writereg_w, reg_31_rewrite;
   logic [31:0]                     readdata_w, aluout_w, result_w;
 
   //--------------------------------------------------------------
@@ -81,7 +86,11 @@ module datapath(input  logic        clk, reset,
 
   mux2 #(32) U_PCBRMUX_F(.d0(pcplus4_f), .d1(pcbranch_d), .s(pcsrc_d), .y(pcnextbr_f));
 
-  mux2 #(32)  U_PCJMUX_F(.d0(pcnextbr_f), .d1(pcjump_d), .s(jump_d), .y(pcnext_f));
+  mux2 #(32)  U_PCJMUX_F(.d0(pcnextbr_f), .d1(pcjump_d), .s(jump_d), .y(pcnext_j));
+  
+  mux2 #(32)  U_PCJMUX_J(.d0(pcnext_j), .d1(rd1_d), .s(jump_r_d), .y(pcnext_f));
+  
+ 
 
   //--------------------------------------------------------------
   //   ID Stage (note control signals arrive here)
@@ -100,9 +109,12 @@ module datapath(input  logic        clk, reset,
   assign pcjump_d = { pcplus4_d[31:28], jpadr_d, 2'b00 };  // jump target address
 
 
+ // mux2 #(32)  U_REG31_MUX (.d0(rs_d), d1(5'd31), .s(jump_r_d) ; 
+
   regfile     U_RF_D(.clk(clk), .we3(regwrite_w), .ra1(rs_d), .ra2(rt_d),
                      .wa3(writereg_w), .wd3(result_w),
                      .rd1(rd1_d), .rd2(rd2_d));
+                     
 
   // add forwarding muxes for comparator later
 
@@ -121,10 +133,10 @@ module datapath(input  logic        clk, reset,
   pr_d_e U_PR_D_E(.clk, .reset, .flush_e(1'b0),
                   .regwrite_d, .memtoreg_d, .memwrite_d, .alucontrol_d,
                   .alusrc_d, .regdst_d, .rd1_d, .rd2_d,
-                  .rs_d, .rt_d, .rd_d, .signimm_d,
+                  .rs_d, .rt_d, .rd_d, .signimm_d, .pcplus4_d,
                   .regwrite_e, .memtoreg_e, .memwrite_e, .alucontrol_e,
                   .alusrc_e, .regdst_e, .rd1_e, .rd2_e,
-                  .rs_e, .rt_e, .rd_e, .signimm_e);
+                  .rs_e, .rt_e, .rd_e, .signimm_e, .pcplus4_e);
 
   // add forwarding muxes here
   assign srca_e = rd1_e;  // temporary
@@ -145,9 +157,9 @@ module datapath(input  logic        clk, reset,
 
   pr_e_m U_PR_E_M(.clk, .reset,
          .regwrite_e, .memtoreg_e, .memwrite_e,
-         .aluout_e, .writedata_e, .writereg_e,
+         .aluout_e, .writedata_e, .writereg_e, .pcplus4_e,
          .regwrite_m, .memtoreg_m, .memwrite_m,
-         .aluout_m, .writedata_m, .writereg_m);
+         .aluout_m, .writedata_m, .writereg_m, .pcplus4_m);
 
   // memory connected through i/o ports
 
@@ -156,9 +168,9 @@ module datapath(input  logic        clk, reset,
   //--------------------------------------------------------------
 
   pr_m_w U_PR_M_W(.clk, .reset,
-        .regwrite_m, .memtoreg_m, .aluout_m, .readdata_m, .writereg_m,
-        .regwrite_w, .memtoreg_w, .aluout_w, .readdata_w, .writereg_w);
+        .regwrite_m, .memtoreg_m, .aluout_m, .readdata_m, .writereg_m, .pcplus4_m,
+        .regwrite_w, .memtoreg_w, .aluout_w, .readdata_w, .writereg_w, .pcplus4_w);
 
-    mux2 #(32)  U_RESMUX(.d0(aluout_w), .d1(readdata_w),.s(memtoreg_w), .y(result_w));
+    mux3 #(32)  U_RESMUX(.d0(aluout_w), .d1(readdata_w), .d2(pcplus4_w), .s(memtoreg_w), .y(result_w));
 
 endmodule

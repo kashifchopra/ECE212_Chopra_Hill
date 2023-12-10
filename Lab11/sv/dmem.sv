@@ -1,5 +1,4 @@
 //--------------------------------------------------------------------
-// dmem.sv - word-aligned data memory for single-cycle MIPS simulation
 // David_Harris@hmc.edu 23 October 2005
 // Updated to SystemVerilog dmh 12 November 2010
 // Refactored into separate files & updated using additional SystemVerilog

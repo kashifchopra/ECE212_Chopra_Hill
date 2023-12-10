@@ -1,9 +1,11 @@
 module pr_m_w(input logic clk, reset,
-  input logic regwrite_m, memtoreg_m,
-  input logic [31:0] aluout_m, readdata_m,
+  input logic regwrite_m, 
+  input logic [1:0] memtoreg_m, 
+  input logic [31:0] aluout_m, readdata_m,pcplus4_m,
   input logic [4:0] writereg_m,
-  output logic regwrite_w, memtoreg_w,
-  output logic [31:0] aluout_w, readdata_w,
+  output logic regwrite_w, 
+  output logic [1:0] memtoreg_w,
+  output logic [31:0] aluout_w, readdata_w,pcplus4_w,
   output logic [4:0] writereg_w
   );
 

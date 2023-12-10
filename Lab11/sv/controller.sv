@@ -18,7 +18,9 @@ module controller(
     input mips_decls_p::opcode_t opcode,
     input mips_decls_p::funct_t funct,
     input logic        zero,
-    output logic       memtoreg, memwrite,
+    output logic [1:0] memtoreg,
+    output logic       memwrite,
+    output logic       jump_r_d,
     output logic       pcsrc, alusrc,
     output logic       regdst, regwrite,
     output logic       jump,
@@ -28,8 +30,8 @@ module controller(
   logic [1:0] aluop;
   logic       branch;
 
-  maindec U_MD(.opcode, .memtoreg, .memwrite, .branch,
-             .alusrc, .regdst, .regwrite, .jump, .aluop);
+  maindec U_MD(.opcode, .memtoreg, .memwrite, .branch, .funct,
+             .alusrc, .regdst, .regwrite, .jump, .aluop, .jump_r_d);
 
   aludec  U_AD(.funct, .aluop, .alucontrol);
 

@@ -11,6 +11,7 @@ sv xil_defaultlib  \
 "../../../../../sv/maindec.sv" \
 "../../../../../sv/mips.sv" \
 "../../../../../sv/mux2.sv" \
+"../../../../../sv/mux3.sv" \
 "../../../../../sv/pr_d_e.sv" \
 "../../../../../sv/pr_e_m.sv" \
 "../../../../../sv/pr_f_d.sv" \
