@@ -1,0 +1,22 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+C:/Users/choprak/ECE212_Chopra_Hill/Lab09/sv/alu.sv,1701552209,systemVerilog,,C:/Users/choprak/ECE212_Chopra_Hill/Lab09/sv/mips_decls_p.sv,,alu,,uvm,,,,,,
+C:/Users/choprak/ECE212_Chopra_Hill/Lab09/sv/aludec.sv,1701556963,systemVerilog,,C:/Users/choprak/ECE212_Chopra_Hill/Lab09/sv/controller.sv,,aludec,,uvm,,,,,,
+C:/Users/choprak/ECE212_Chopra_Hill/Lab09/sv/controller.sv,1701981168,systemVerilog,,C:/Users/choprak/ECE212_Chopra_Hill/Lab09/sv/datapath.sv,,controller,,uvm,,,,,,
+C:/Users/choprak/ECE212_Chopra_Hill/Lab09/sv/datapath.sv,1702582665,systemVerilog,,C:/Users/choprak/ECE212_Chopra_Hill/Lab09/sv/flopenr.sv,,datapath,,uvm,,,,,,
+C:/Users/choprak/ECE212_Chopra_Hill/Lab09/sv/flopenr.sv,1701552209,systemVerilog,,C:/Users/choprak/ECE212_Chopra_Hill/Lab09/sv/flopr.sv,,flopenr,,uvm,,,,,,
+C:/Users/choprak/ECE212_Chopra_Hill/Lab09/sv/flopr.sv,1701552209,systemVerilog,,C:/Users/choprak/ECE212_Chopra_Hill/Lab09/sv/maindec.sv,,flopr,,uvm,,,,,,
+C:/Users/choprak/ECE212_Chopra_Hill/Lab09/sv/maindec.sv,1701556031,systemVerilog,,C:/Users/choprak/ECE212_Chopra_Hill/Lab09/sv/mem.sv,,maindec,,uvm,,,,,,
+C:/Users/choprak/ECE212_Chopra_Hill/Lab09/sv/mem.sv,1701552209,systemVerilog,,C:/Users/choprak/ECE212_Chopra_Hill/Lab09/sv/mips_multi.sv,,mem,,uvm,,,,,,
+C:/Users/choprak/ECE212_Chopra_Hill/Lab09/sv/mips_decls_p.sv,1701552209,systemVerilog,C:/Users/choprak/ECE212_Chopra_Hill/Lab09/sv/aludec.sv;C:/Users/choprak/ECE212_Chopra_Hill/Lab09/sv/controller.sv;C:/Users/choprak/ECE212_Chopra_Hill/Lab09/sv/datapath.sv;C:/Users/choprak/ECE212_Chopra_Hill/Lab09/sv/maindec.sv;C:/Users/choprak/ECE212_Chopra_Hill/Lab09/sv/mips_multi.sv,C:/Users/choprak/ECE212_Chopra_Hill/Lab09/sv/aludec.sv,,mips_decls_p,,uvm,,,,,,
+C:/Users/choprak/ECE212_Chopra_Hill/Lab09/sv/mips_multi.sv,1701552209,systemVerilog,,C:/Users/choprak/ECE212_Chopra_Hill/Lab09/sv/mips_multi_top.sv,,mips_multi,,uvm,,,,,,
+C:/Users/choprak/ECE212_Chopra_Hill/Lab09/sv/mips_multi_top.sv,1701552209,systemVerilog,,C:/Users/choprak/ECE212_Chopra_Hill/Lab09/sv/mux2.sv,,mips_multi_top,,uvm,,,,,,
+C:/Users/choprak/ECE212_Chopra_Hill/Lab09/sv/mux2.sv,1701552209,systemVerilog,,C:/Users/choprak/ECE212_Chopra_Hill/Lab09/sv/mux3.sv,,mux2,,uvm,,,,,,
+C:/Users/choprak/ECE212_Chopra_Hill/Lab09/sv/mux3.sv,1701552209,systemVerilog,,C:/Users/choprak/ECE212_Chopra_Hill/Lab09/sv/mux4.sv,,mux3,,uvm,,,,,,
+C:/Users/choprak/ECE212_Chopra_Hill/Lab09/sv/mux4.sv,1701552209,systemVerilog,,C:/Users/choprak/ECE212_Chopra_Hill/Lab09/sv/regfile.sv,,mux4,,uvm,,,,,,
+C:/Users/choprak/ECE212_Chopra_Hill/Lab09/sv/regfile.sv,1701552209,systemVerilog,,C:/Users/choprak/ECE212_Chopra_Hill/Lab09/sv/signext.sv,,regfile,,uvm,,,,,,
+C:/Users/choprak/ECE212_Chopra_Hill/Lab09/sv/signext.sv,1701552209,systemVerilog,,C:/Users/choprak/ECE212_Chopra_Hill/Lab09/sv/testbench.sv,,signext,,uvm,,,,,,
+C:/Users/choprak/ECE212_Chopra_Hill/Lab09/sv/testbench.sv,1701552209,systemVerilog,,,,testbench,,uvm,,,,,,
+C:/Users/choprak/ECE212_Chopra_Hill/Lab10/Lab10/Lab10.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,uvm,,,,,,
